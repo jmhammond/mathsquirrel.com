@@ -4,12 +4,17 @@ date: 2024-02-15
 summary: "A description of what I did in order to get Blackboard's Gradebook to hide numbers, show letters, and give meaningful and motivating colors."
 ---
 
-After finished reading a [post about simplifying a discrete course on the Grading for Growth blog](https://gradingforgrowth.com/p/three-ways-i-am-simplifying-my-alternative). I based my own courses off your original iteration, and I wanted to share a neat ‘innovation’ that I’ve done exploiting neat feature in the Blackboard gradebook:
+After finished reading a [post about simplifying a discrete course on the Grading for Growth blog](https://gradingforgrowth.com/p/three-ways-i-am-simplifying-my-alternative). I based my own courses off your original iteration, and I wanted to share a neat ‘innovation’ that I’ve done exploiting neat feature in the Blackboard gradebook.
 
-First, create a “[Grading Schema](https://help.blackboard.com/Learn/Instructor/Ultra/Grade/Customize_Grading_Interface/Grading_Schemas)”  — I call mine mastery
-	- Blackboard requires numeric values for grades, but the schema will present text entries. 
-	- It also colors the values! 
-	- I use a 4 point scale, with 0 being “N” (red),  3 being “P” (yellow), and 4 being “PM🎉” (green) with meaning from your original grading system.
+{{< alert "lightbulb" >}}
+Want to know more about mastery grading? [Check this post for a little more information](../../../2023/non_traditional_grading1/)
+{{< /alert >}}
+
+First, create a “[Grading Schema](https://help.blackboard.com/Learn/Instructor/Ultra/Grade/Customize_Grading_Interface/Grading_Schemas)." I call mine mastery.
+
+- Blackboard requires numeric values for grades, but the schema will present text entries. 
+- It also colors the values! 
+- I use a 4 point scale, with 0 being “N” (red),  3 being “P” (yellow), and 4 being “PM🎉” (green) with meaning from your original grading system.
 
 Next, create each learning target column in the gradebook to have that schema.  The teacher view looks like this after two attempts: 
 
