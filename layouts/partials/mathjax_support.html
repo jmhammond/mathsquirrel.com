@@ -1,0 +1,18 @@
+<script>
+  MathJax = {
+  tex: {
+      packages: ['base', 'ams'],        // extensions to use
+      inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    displayMath: [             // start/end delimiter pairs for display math
+      ['$$', '$$'],
+      ['\\[', '\\]']
+    ],
+    processEscapes: true,      // use \$ to produce a literal dollar sign
+    processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
+    formatError:               // function called when TeX syntax errors occur
+        (jax, err) => jax.formatError(err)
+  }
+};
+</script>
+<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
