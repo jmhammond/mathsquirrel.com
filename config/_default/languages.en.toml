@@ -11,7 +11,9 @@ title = "Notes and Musings"
 [params]
   dateFormat = "January 2, 2006"
 
-  # mainSections = ["section1", "section2"]
+  # This variable determines what shows in the "Recents" list
+  mainSections = ["posts"]
+  # mainSections = ["posts", "teaching_seminar"]
   # description = "My awesome website"
 
 [params.author]
