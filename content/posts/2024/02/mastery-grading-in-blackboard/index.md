@@ -18,11 +18,11 @@ First, create a “[Grading Schema](https://help.blackboard.com/Learn/Instructor
 
 Next, create each learning target column in the gradebook to have that schema.  The teacher view looks like this after two attempts: 
 
-![Teacher view screenshot](./teacher-view.png)
+{{< figure src="./teacher-view.png" default="true" alt="Teacher view screenshot" width="60%" >}}
 
 Each entry is actually a number (uploaded from a spreadsheet), but the students never see that:
 
-![Numbers displayed in the gradebook](./grades-are-numbers.png)
+{{< figure src="./grades-are-numbers.png" default="true" alt="Numbers displayed in  the gradebook" width="50%">}}
 
 And the magic is that in the Student View, students are given not just letter clues, but color cues for how they’re doing:
 
