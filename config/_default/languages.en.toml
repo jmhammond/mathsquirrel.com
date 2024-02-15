@@ -4,7 +4,7 @@ languageDirection = "ltr"
 weight = 1
 
 
-title = "John's Musings"
+title = "Notes and Musings"
 
 # copyright = "Copy, _right?_ :thinking_face:"
 
@@ -16,12 +16,13 @@ title = "John's Musings"
 
 [params.author]
   name = "John Hammond"
-  # image = "img/author.jpg"
-  # headline = "I'm only human"
-  # bio = "A little bit about you"
-  # links = [
-  #   { email = "mailto:hello@your_domain.com" },
-  #   { link = "https://link-to-some-website.com/" },
+  image = "/images/professor-squirrel.jpeg"
+  # image = "/images/john-hammond.jpg"
+  headline = "Teaching Professor; Nerd"
+  # bio = "Teaching Professor in the Department of Mathematics/Statistics at Wichita State University."
+  links = [
+    { email = "mailto:jmhammond@gmail.com" },
+  #  { link = "https://mathsquirrel.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },
   #   { blogger = "https://username.blogspot.com/" },
@@ -32,7 +33,7 @@ title = "John's Musings"
   #   { facebook = "https://facebook.com/username" },
   #   { flickr = "https://www.flickr.com/photos/username/" },
   #   { foursquare = "https://foursquare.com/username" },
-  #   { github = "https://github.com/username" },
+    { github = "https://github.com/jmhammond" },
   #   { gitlab = "https://gitlab.com/username" },
   #   { google = "https://www.google.com/" },
   #   { google-scholar = "https://scholar.google.com/citations?user=user-id" },
@@ -63,4 +64,4 @@ title = "John's Musings"
   #   { whatsapp = "https://wa.me/phone-number" },
   #   { x-twitter = "https://twitter.com/username" },
   #   { youtube = "https://youtube.com/username" },
-  # ]
+  ]

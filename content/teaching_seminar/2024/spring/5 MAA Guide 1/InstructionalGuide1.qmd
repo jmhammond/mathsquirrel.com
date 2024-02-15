@@ -1,0 +1,79 @@
+---
+title: "Teaching Seminar Series"
+date: February 15, 2024
+bibliography: references.bib
+format: 
+  revealjs:
+    incremental: true
+    theme: solarized
+    css: slides.css
+---
+
+# MAA instructional Practices Guide
+Part 1 of 7 - Fostering Student Engagement
+
+## Active Learning
+
+> Classroom practices aimed at fostering student engagement attend to the research-based idea that students learn best when they are engaged in their learning (e.g., Freeman, et al., 2014) 
+
+[@Abell_Braddy_Ensley_Ludwig_Soto_2018]
+
+But don't worry too much!
+
+## "Active" Learning
+
+> Freeman et al. (2014) coded active learning as “intensities ranging from 10% to 100% of class time.” 
+> Think about that. This study, a phenomenally important, heavily cited meta-analysis, classified a session as active learning if there were 5  minutes of an in-class worksheet or a clicker question in a 50-minute class session. 
+> That means this is not lecture versus active learning; it is all-lecture learning versus lecture plus active learning 
+
+[@Zakrajsek_Nilson_2023]
+
+## Practices Fostering Student Engagement
+
+Before we dig in individually, let's look at the list: 
+
+- Building a classroom community
+- Wait time
+- responding to student contributions in the classroom
+- one-minute paper or exit tickets
+- collaborative learning strategies
+
+## Discussion:
+
+In small groups, discuss (~ 3-5 minutes) then we'll share out:
+
+- What are you already using?  
+  - How it is going? where could it improve?
+
+
+Practices:
+
+::: {.nonincremental}
+- Building a classroom community
+- Wait time
+- responding to student contributions in the classroom
+- one-minute paper or exit tickets
+- collaborative learning strategies
+:::
+
+## As we discuss it all together:
+
+Please think about: 
+
+- What is one thing you can implement in your classroom today/tomorrow to increase engagement for all students? 
+- What will have to change in your preparation for class to ensure the change above can happen?
+- How will you determine if the implementation is effective? 
+
+- (would you like to take 2-3 minutes to write down ideas?)
+
+## Practices Fostering Student Engagement
+
+Now let's dig into each together as a community: 
+
+- Building a classroom community
+- Wait time
+- responding to student contributions in the classroom
+- one-minute paper or exit tickets
+- collaborative learning strategies
+
+## Citations
