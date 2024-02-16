@@ -10,7 +10,7 @@ mathjax = false
 ShowCodeCopyButtons = false
 ShowBreadCrumbs = false
 showReadingTime= false
-summary= "Discussing pages 1-14 of the guide on practices to encourage student participation."
+summary= "Outlining the three day mini workshop for returning GTAs"
 slug = "winter-workshop-24"
 +++
 
