@@ -17,7 +17,7 @@
 
 [[main]]
   name = "Teaching Seminar"
-  pageRef = "teaching_seminar"
+  pageRef = "teaching-seminar"
   weight = 20
 
 [[main]]
