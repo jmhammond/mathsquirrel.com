@@ -1,7 +1,7 @@
 ---
 title: "Quoted in The Sunflower re: Computer Science Concerns"
 date: "2024-02-15T20:00:00Z"
-summary: "... in which we see that I am directly quoted in the campus newsletter, and we reflect on what that means."
+summary: "... in which we see that I am directly quoted in the campus newsletter, and we reflect on what that means. (Image by Thy Vo for the Sunflower)"
 ---
 
 In the [February 15, 2024 issue of the Sunflower](https://thesunflower.com/80399/news/administrators-warn-faculty-staff-that-budget-cuts-loom-unless-graduate-school-enrollment-picks-up/), Trinity Ramm writes about the recent email from WSU's president and provost regarding graduate student enrollment numbers. 
@@ -14,9 +14,9 @@ The article quotes [my informal statement](https://www.wichita.edu/academics/fac
 
 when I really mean, holistically: 
 
-> I would rather see $2M budget cuts than admit **morons-who-know-nothing-and-choose-to-lie-cheat-and-harassess** again.
+> I would rather see $2M budget cuts than admit **morons-who-know-nothing-and-choose-to-lie-cheat-and-harass** again.
 
-Anyway, [it's been almost six years since I've been quoted in a newspaper](https://www.kansas.com/news/local/article216899035.html).  In that previous time, my push for no-cost library book holds ended up pissing off the city's library director.  (Years later, we have a new library director and the library no longer charge holds for library books!).  I bring this up, because it's one thing to complain about abuses in an 'informal statement' to the most complainingest body on campus... It's another to be publicly going against people I love and respect (Shirley and Rick, this isn't personal!). 
+Anyway, [it's been almost six years since I've been quoted in a newspaper](https://www.kansas.com/news/local/article216899035.html).  In that previous time, my push for no-cost library book holds ended up pissing off the city's library director.  (Years later, we have a new library director and the library no longer charge holds for library books!).  I bring this up, because it's one thing to complain about abuses in an 'informal statement' to the most complainingest body on campu/s... It's another to be publicly going against people I love and respect (Shirley and Rick, this isn't personal!). 
 
 All the said, everything I wrote in the statement is true. But there was far more that didn't fit into my brief statement:
 
@@ -33,13 +33,13 @@ I am obviously troubled that the university budgeted on a bubble caused by a cha
 
 And I am obviously troubled that the University suggests that we faculty are part of the problem.  
 
-Some faculty were part of the problem. They're no longer part of the University.
-
 It was deeply irresponsible to admit those students, especially as they did not have the formal backgrounds necessary to complete the coursework to which they applied.  
 
-Could we have done better? Sure! We see they don't have background and offer them conditional acceptance pending completion of some undergraduate courses. We could give them training on academic dishonesty and the importance of academic integrity in American higher education.  We could also ensure that we have the faculty to teach the courses before admitting so many students.
+Could we have done better? Sure! Here's some ideas: 
+- We see they don't have background and offer them conditional acceptance pending completion of some undergraduate courses. 
+- We could give them training on academic dishonesty and the importance of academic integrity in American higher education. We could also ensure that we have the faculty to teach the courses before admitting so many students.
 
-Some of these problems are being solved... CS is no longer allowed to admit 900 students. I think it's something like 120 now.  And our math department has now had training and guidance around holding office hours with several students in the main math office to avoid bullying. It's awful we need this guidance... but needs must.
+Some of these problems are being solved... CS is no longer allowed to admit 900 students. I think it's something like 120 now. The office of Student Conduct and Community Standards does academic integrity training for incoming students.  And our math department has now had training and guidance around holding office hours with several students in the main math office to avoid bullying. It's awful we need this guidance... but needs must.
 
 But we mustn't turn on the enrollment faucet without carefully considering the academic preparation of who we're admitting. We need to go slowly and vet candidates. Graduate school is hard... but that's good. A masters' degree is not a sheet of paper you can buy with dollars and dishonesty.
 
