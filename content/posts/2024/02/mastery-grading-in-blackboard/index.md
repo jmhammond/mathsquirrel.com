@@ -1,6 +1,7 @@
 ---
 title: "Mastery Grading in Blackboard - Colors and Letters"
-date: 2024-02-15
+date: "2024-02-15T08:00:00Z"
+tags: ["grading"]
 summary: "A description of what I did in order to get Blackboard's Gradebook to hide numbers, show letters, and give meaningful and motivating colors."
 ---
 
@@ -33,5 +34,3 @@ Last semester, I had students come up to me and say “I still need to get a ski
 This is a small thing, but I really grew to like the “stop light” grading after one semester.  I wanted to share it with as a possibility to keep the two-levels without the complication of "1 and 2” levels.  
 
 Of course, now that I think about it, I could further simplify it so rather than using codes like "P" and “PM” the schema could say “One More” and “Done! 🎉” Maybe that’s for next semester.
-
-John

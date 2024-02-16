@@ -10,7 +10,7 @@ cascade:
   invertPagination: true
 ---
 
-Some notes from our math department teaching seminar.
+Some notes from the WSU math department teaching seminar.
 
 <!--more-->
 

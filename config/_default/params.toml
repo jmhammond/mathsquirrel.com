@@ -19,8 +19,8 @@ fingerprintAlgorithm = "sha256"
 
 [header]
   layout = "basic" # valid options: basic, hamburger, hybrid, custom
-  #logo = "images/SquirrelFlag.png"
-  # logoDark = "img/dark-logo.jpg"
+  # logo = "images/SquirrelIcon64x.png"
+  # logoDark = "images/dark-.jpg"
   showTitle = true
 
 [footer]
@@ -51,7 +51,7 @@ fingerprintAlgorithm = "sha256"
   showTaxonomies = false
   showWordCount = false
   showComments = false
-  # sharingLinks = ["facebook", "twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "telegram", "line", "weibo"]
+  #sharingLinks = ["facebook", "twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "telegram", "line", "weibo"]
 
 [list]
   showBreadcrumbs = false
