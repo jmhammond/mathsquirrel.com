@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 5.5
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 5.5 Average Value of a Function
+Average Value of a Function
 <!--more-->
 
 ### Recall Averages

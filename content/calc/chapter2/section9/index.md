@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 2.9
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 2.9, Linear Approximations and Differentials
+Linear Approximations and Differentials
 <!--more-->
 
 # Linear Approximations

@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 2.5
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 2.5, the chain rule
+The chain rule
 <!--more-->
 
 # The Chain Rule

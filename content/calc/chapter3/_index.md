@@ -1,9 +1,9 @@
 ---
 author: John Hammond
 title: Chapter 3
-description: Applications of Differentiation
 mathjax: false
 ShowBreadCrumbs: true
+showDate: false
 ---
 
 In which we learn to apply derivatives.

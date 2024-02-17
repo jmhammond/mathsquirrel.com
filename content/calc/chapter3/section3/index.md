@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 3.3
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 3.3, The First and Second Derivative Test
+The First and Second Derivative Test
 <!--more-->
 
 ## Increasing / Decreasing Test

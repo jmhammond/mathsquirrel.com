@@ -3,7 +3,7 @@ author: John Hammmond
 title: section 4.3
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
 ---
 

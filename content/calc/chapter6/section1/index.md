@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 6.1
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 6.1 Inverse Functions
+Inverse Functions
 <!--more-->
 
 If you're enrolled in Math/CS 321, see this footnote[^1]

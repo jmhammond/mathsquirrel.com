@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 5.2
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 5.2 Volumes by Washers
+Volumes by Washers
 <!--more-->
 
 This section explores the ideas of computing volumes of solids by a method called 'washers.'

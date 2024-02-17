@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 2.3
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 2.3, Differentiation Formulas
+Differentiation Formulas
 <!--more-->
 
 # Differentiation Formulas

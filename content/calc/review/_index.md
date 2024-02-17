@@ -1,9 +1,9 @@
 ---
 author: John Hammond
 title: Review Topics
-description: Algebra review
 mathjax: false
 ShowBreadCrumbs: true
+showDate: false
 ---
 
 In which we review some concepts of algebra

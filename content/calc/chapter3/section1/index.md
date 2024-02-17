@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 3.1
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 3.1, Critical Numbers, Max and Mins
+Critical Numbers, Max and Mins
 <!--more-->
 
 

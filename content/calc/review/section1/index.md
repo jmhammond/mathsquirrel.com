@@ -3,9 +3,10 @@ author: John Hammond
 title: Section 1.1
 mathjax: true
 ShowBreadCrumbs: true
+showDate: false
 ---
 
-**Section 1.1 - Four Ways of Representing a Function**
+Four Ways of Representing a Function
 
 Full disclosure: these videos are produced my another professor, and I'm including them here for review. 
 

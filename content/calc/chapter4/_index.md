@@ -1,9 +1,9 @@
 ---
 author: John Hammond
 title: Chapter 4
-description: Basics of Integration
 mathjax: false
 ShowBreadCrumbs: true
+showDate: false
 ---
 
 In which we learn about integrals.

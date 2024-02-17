@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 4.4
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 4.4 Indefinite Integrals
+Indefinite Integrals
 <!--more-->
 
 If $f$ is continuous on $[a, b]$ and $F$ is an antiderivative of $f$, 

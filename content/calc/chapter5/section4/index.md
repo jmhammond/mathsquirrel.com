@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 5.4
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 5.4 Work
+Work
 <!--more-->
 
 Applying integral calculus to practical problems

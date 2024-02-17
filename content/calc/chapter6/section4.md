@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 6.4
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 6.4 - Calculus of Logarithms
+Calculus of Logarithms
 <!--more-->
 
 ## Derivative of the Logarithm

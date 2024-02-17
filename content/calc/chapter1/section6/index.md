@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 1.6
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-1.6 Limit Laws and the Squeeze Theorem
+Limit Laws and the Squeeze Theorem
 <!--more-->
 
 # The limit laws

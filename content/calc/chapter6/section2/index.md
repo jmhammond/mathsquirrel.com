@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 6.2
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 6.2 Exponential Functions
+Exponential Functions
 <!--more-->
 
 An exponential function is a function in which the variable is in the exponent. $y = a^x$ where $a > 0$. Remember that exponentiation is repeated multiplication. That is,

@@ -3,12 +3,13 @@ author: John Hammond
 title: Section 1.8
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
 
-Section 1.8 Continuity
+Continuity
 
 <!--more-->
 

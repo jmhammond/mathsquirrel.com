@@ -1,14 +1,14 @@
 ---
 author: John Hammond
 title: Section 1.4
-description: What is calculus about?
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 1.4, What is Calculus all about?
+What is Calculus all about?
 <!--more-->
 
 ## The Tangent Problem

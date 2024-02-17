@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 4.1
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 4.1 Area, Distances, and Approximations
+Area, Distances, and Approximations
 <!--more-->
 
 ## The Area Problem

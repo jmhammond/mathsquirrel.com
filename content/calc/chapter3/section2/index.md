@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 3.2
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 3.2, The Mean Value Theorem
+The Mean Value Theorem
 <!--more-->
 
 In this section we're going to explore the concept of a location where a function attains *the **average*** or or *mean value*. 

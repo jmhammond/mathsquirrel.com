@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 1.5
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-1.5 The Limit
+The Limit
 <!--more-->
 
 This is section 1.5 
@@ -104,55 +105,3 @@ https://www.geogebra.org/m/PSrua4JF
 ##  Now practice!
 
 Head over to WebAssign and work on section 1.5. If you have questions, let me know!
-
-----
-
-# This is section 1.6
-
-# The limit laws
-
-Suppose $c$ is a constant and the limits:
-$$
-\lim_{x\to a} f(x) \text{  and  } \lim_{x\to a} g(x)
-$$
-exist and are finite. Then:
-1. $\displaystyle \lim_{x\to a} [ f(x) + g(x) ] = \lim_{x\to a} f(x) + \lim_{x \to a} g(x)$
-1. $\displaystyle \lim_{x\to a} [ f(x) - g(x) ] = \lim_{x\to a} f(x) - \lim_{x \to a} g(x)$
-1. $\displaystyle \lim_{x\to a} [ cf(x) ] = c \cdot \lim_{x\to a} f(x)$
-1. $\displaystyle \lim_{x\to a} [ f(x) g(x) ] = \lim_{x\to a} f(x) \cdot \lim_{x \to a} g(x)$
-1. $\displaystyle \lim_{x\to a} \frac{f(x)}{g(x)} = \frac{\lim_{x\to a} f(x)}{\lim_{x \to a} g(x)}$ if $\lim_{x\to a} g(x) \ne 0$.
-1. $\displaystyle \lim_{x\to a} [ f(x) ]^n = [\lim_{x\to a} f(x)]^n$ if $n$ is a number
-
-## Examples
-Below I work many examples in the video
-
-{{< youtube 52EGYgkpNQs >}}
-
-### Caution! 
-The limit laws only work if the limit exists and is finite! For example, we know
-$$
-\lim_{x\to 0} \frac{1}{x^2} = 0 \text{  and  } \lim_{x\to 0} \frac{1}{x^4} = 0
-$$
-but ...
-$$
-\lim_{x\to 0} \frac{1/x^2}{1/x^4} = \lim_{x\to 0} \frac{x^4}{x^2} = \lim_{x\to 0} x^2 = 0
-$$
-
-## The Squeeze Theorem
-If $f(x) \le g(x) \le h(x)$ when $x$ is near $a$ 
-$$
-\lim_{x\to a} f(x) = \lim_{x\to a} h(x) = L
-$$
-then $\displaystyle \lim_{x\to a} g(x) = L$.
-
-Here's an illustration of the red function $g(x)$ being *squeezed* between the upper blue function $h(x)$ and the black function $f(x)$ from below at the point $x=a$.
-{{< figure src="1.5.squeeze.png" alt="">}}
-
-### Example
-Show that $\displaystyle \lim_{x\to 0} x^2 \sin\left( \frac{1}{x} \right) = 0$
-
-{{< youtube 662z15ggOQ0 >}}
-
-##  Now practice!
-
-Head over to WebAssign and work on section 1.6. If you have questions, let's talk about them!

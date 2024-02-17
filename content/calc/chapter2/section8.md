@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 2.8
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 2.8, related rates
+Related rates
 <!--more-->
 
 

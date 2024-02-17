@@ -3,9 +3,10 @@ author: John Hammond
 title: Section 1.2
 mathjax: true
 ShowBreadCrumbs: true
+showDate: false
 ---
 
-**Section 1.2 - Mathematical Models: A Catalog of Essential Functions**
+Mathematical Models: A Catalog of Essential Functions
 
 The following videos are lecture videos covering the material from Section 1.2 in Stewart's Calculus 8th edition. Each major topic in the section is broken down into a short video. 
 

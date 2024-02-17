@@ -2,12 +2,13 @@
 author: John Hammond
 title: Section 2.4
 mathjax: true
+showDate: false
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
 ---
 
-Section 2.4, derivatives of trig functions
+Derivatives of trig functions
 <!--more-->
 
 # Derivatives of Trig Functions

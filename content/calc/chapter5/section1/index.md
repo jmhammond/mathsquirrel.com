@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 5.1
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 5.1 Areas 
+Areas 
 <!--more-->
 
 We have found areas under the curve which are the signed area between a function and the $x$ axis, but what about finding the area between two different functions?

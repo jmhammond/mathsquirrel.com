@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 3.9
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 3.9, Antiderivatives
+Antiderivatives
 <!--more-->
 
 ### Definition

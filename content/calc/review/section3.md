@@ -3,8 +3,9 @@ author: John Hammond
 title: Section 1.3
 mathjax: true
 ShowBreadCrumbs: true
+showDate: false
 ---
-**Section 1.3 - New Functions from Old Functions**
+New Functions from Old Functions
 
 The following videos are lecture videos covering the material from Section 1.3 in Stewart's Calculus 8th edition. Each major topic in the section is broken down into a short video. 
 

@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 2.2
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 2.2, the derative 
+The derivative 
 
 <!--more-->
 

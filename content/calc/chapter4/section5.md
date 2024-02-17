@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 4.5
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 4.5 Substitution
+Substitution
 <!--more-->
 
 By the way, I may call this variously "u-substitution" (which  most people do) or "basic substitution." When I call it basic, I don't mean to be rude, it's just that I'm teaching calc 2 at the same time, and in that class I've been saying "this is a basic calc 1 substitution" a lot.

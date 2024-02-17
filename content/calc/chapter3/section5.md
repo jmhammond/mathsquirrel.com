@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 3.5
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 3.5, Summary of Curve Sketching
+Summary of Curve Sketching
 <!--more-->
 
 The examples in this section use everything we've learned for the previous four sections all at once. As a result, each video is quite long. Pause when you need to and ask any questions that you have!

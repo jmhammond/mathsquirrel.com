@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 1.7
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 1.7 formal definition of the limit
+Formal definition of the limit
 <!--more-->
 
 ## Neighborhoods

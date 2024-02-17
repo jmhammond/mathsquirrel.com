@@ -3,7 +3,7 @@ author: John Hammond
 title: Section 3.4
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
 ---
 

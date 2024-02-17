@@ -1,9 +1,9 @@
 ---
 author: John Hammond
 title: Chapter 5
-description: Applications of Integration
 mathjax: false
 ShowBreadCrumbs: true
+showDate: false
 ---
 
 In which we learn to apply integrals.

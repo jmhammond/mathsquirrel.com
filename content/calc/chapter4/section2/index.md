@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 4.2
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-section 4.2 The Definite Integral
+The Definite Integral
 <!--more-->
 
 Welcome to integral calculus!

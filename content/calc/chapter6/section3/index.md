@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 6.3
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 6.3 Logarithms
+Logarithms
 <!--more-->
 
 

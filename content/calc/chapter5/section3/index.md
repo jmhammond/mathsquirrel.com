@@ -3,11 +3,12 @@ author: John Hammmond
 title: section 5.3
 mathjax: true
 showbreadcrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 5.3 Volumes by Cylinders
+Volumes by Cylinders
 <!--more-->
 
 In this section, we're still revolving regions over an axis, but rather than constructing our region as accumulating circles, this time we're accumulating *cylinders*. 

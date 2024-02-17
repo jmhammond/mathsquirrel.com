@@ -1,9 +1,9 @@
 ---
 author: John Hammond
 title: Chapter 2
-description: Basics of Differentiation
 mathjax: false
 ShowBreadCrumbs: true
+showDate: false
 ---
 
 In which we learn about derivatives.

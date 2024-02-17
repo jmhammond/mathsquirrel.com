@@ -3,11 +3,12 @@ author: John Hammond
 title: Section 2.6
 mathjax: true
 ShowBreadCrumbs: true
-showtoc: true
+showTableOfContents: true
 tocopen: false
+showDate: false
 ---
 
-Section 2.5, Implicit Differentiation
+Implicit Differentiation
 <!--more-->
 
 # Implicit curves
