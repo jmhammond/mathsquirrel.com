@@ -22,4 +22,4 @@ Here are some resources I've developed for classes at Wichita State University:
 
 - [Calculus 1 class notes](/calc) 
 
-- [Discrete Math for Shockers](https://wichita.edu/discretebook)
+- [Discrete Math for Shockers](/discretebook/)
