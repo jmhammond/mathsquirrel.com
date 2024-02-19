@@ -2,7 +2,7 @@
 title: "Mine vs. Not Mine - Clearly defining your role"
 author: ["John Hammond"]
 date: 2024-02-19
-thumb-alt: "make an image of a group of people sitting around a round table all touching their noses with one finger"
+thumbnailAlt: "make an image of a group of people sitting around a round table all touching their noses with one finger"
 summary: "First, big shout-out to Dall-E for generating the fantastic 'not it' image."
 ---
 
