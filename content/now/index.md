@@ -22,6 +22,7 @@ Here's what up I'm to now[^1]. Last updated February 2024
 - I'm on the university's student success and persistence coalition
 - I'm a part of the Student Experience Project implementation team for Wichita State
 - and I'm joining a research group on college math instruction.
+- and I'm developing a new course for the summer!
 
 ## Future: 
 

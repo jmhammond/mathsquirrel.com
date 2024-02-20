@@ -20,6 +20,7 @@ Here are some resources I've developed for classes at Wichita State University:
 
 (I'll make this pretty in the future)
 
-- [Calculus 1 class notes](/calc) 
+[Calculus 1 class notes](/calc) 
 
-- [Discrete Math for Shockers](/discretebook/)
+<a href="/discretebook"> {{< figure src="/discretebook/BookCover.png" width="30%" default="true" alt="The textbook's print book cover." caption="Discrete Math for Shockers">}} 
+</a>
