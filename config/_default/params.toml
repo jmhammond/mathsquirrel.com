@@ -19,6 +19,7 @@ fingerprintAlgorithm = "sha256"
 
 [header]
   layout = "basic" # valid options: basic, hamburger, hybrid, custom
+  logo = "icons/squirrel2x.png"
   # logo = "images/SquirrelIcon64x.png"
   # logoDark = "images/dark-.jpg"
   showTitle = true
