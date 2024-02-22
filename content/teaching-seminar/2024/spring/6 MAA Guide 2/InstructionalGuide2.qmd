@@ -1,0 +1,73 @@
+---
+title: "Teaching Seminar Series"
+date: February 22, 2024
+bibliography: references.bib
+format: 
+  revealjs:
+    incremental: true
+    theme: solarized
+    css: slides.css
+---
+
+# MAA instructional Practices Guide
+Part 2 of 7 - Fostering Student Engagement
+
+## "Active" Learning Reminder
+
+> That means this is not lecture versus active learning; it is all-lecture learning versus lecture plus active learning 
+
+[@Zakrajsek_Nilson_2023]
+
+## Practices Fostering Student Engagement
+
+Before we dig in individually, let's look at the list: 
+
+- Just-in-time teaching 
+- Developing persistence in problem solving
+- Inquiry-based teaching and learning strategies
+- Peer instruction and technology
+
+## Discussion:
+
+In small groups, discuss (~ 3-5 minutes) then we'll share out:
+
+- What are you already using?  
+  - How it is going? where could it improve?
+
+
+Practices:
+
+::: {.nonincremental}
+- Just-in-time teaching 
+  - (Summer's calc 2 & 3:  Aubrey?)
+- Developing persistence in problem solving
+  - (Sangami's 012 course, Tuesday)
+- Inquiry-based teaching and learning strategies
+  - (samples shared below)
+- Peer instruction and technology
+  - (we can model this with the 4-functions activity)
+:::
+
+## Practices Fostering Student Engagement
+
+Now let's dig into each together as a community: 
+
+- Just-in-time teaching 
+- Developing persistence in problem solving
+- Inquiry-based teaching and learning strategies
+- Peer instruction and technology
+
+## Inquiry based learning (IBL) examples 
+
+- [Active Calculus Series](https://activecalculus.org)
+- [Calculus for Team-Based Inquiry Learning](https://teambasedinquirylearning.github.io/calculus/2024e/frontmatter.html)
+- IBL Activies in Discrete, e.g. [(Oscar Levin's text)](https://discrete.openmathbooks.org/dmoi3/ch_sequences.html)
+- [Inquiry Oriented Linear Algebra](https://iola.math.vt.edu)
+- Even more from Steven Clontz and more in the [Team-Based Learning Collaborative](https://sites.google.com/southalabama.edu/tbil/)
+- All of these are OERs
+
+## More IBL examples in upper division
+
+- [Number Theory, Real Analysis, Topology](https://web.ma.utexas.edu/ibl/courses.html)
+
+## Citations
