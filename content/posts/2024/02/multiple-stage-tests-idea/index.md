@@ -2,6 +2,7 @@
 title: "Multiple-stage Midterm Experiment - Part 1"
 author: ["John Hammond"]
 date: 2024-02-22
+showTableOfContents: true
 summary: "... in which we go even further on the road of non-standard assessments."
 ---
 
