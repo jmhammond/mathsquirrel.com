@@ -3,13 +3,12 @@ title: "Done with the Senate, part 1: grumpiness"
 author: ["John Hammond"]
 date: 2024-02-28
 thumbnailAlt: "screencap from 1776 the musical"
-summary: "... in which I reflect on the worst session in my five years in the Senate."
+summary: "... in which I reflect on the most disappointing session in my five years in the Senate."
 ---
 
 > I have come to the conclusion that one useless man is called a disgrace; that two are called a law firm; and that three or more become a Congress! And, by God, I have had this Congress!
 
 says a fictionalized John Adams addressing the Continental Congress in the musical *1776*. 
-
 
 I've served on the Faculty Senate for five years now, and been on the Executive Committee as Secretary of the Senate for four years, and [we've certainly accomplished some good things](../../03/done-with-senate-2/). But right now, things are annoying and so I'm in a complaining mood. Let me get that part off my chest. 
 
