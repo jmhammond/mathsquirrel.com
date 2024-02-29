@@ -1,5 +1,5 @@
 ---
-title: "Done with the Senate, part 2: positive reflections"
+title: "Departing the Senate, part 2: positive reflections"
 author: ["John Hammond"]
 date: 2024-02-29
 thumbnailAlt: "screencap from Mr. Smith Goes to Washington"

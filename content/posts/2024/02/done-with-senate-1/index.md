@@ -1,5 +1,5 @@
 ---
-title: "Done with the Senate, part 1: grumpiness"
+title: "Departing the Senate, part 1: grumpiness"
 author: ["John Hammond"]
 date: 2024-02-28
 thumbnailAlt: "screencap from 1776 the musical"
