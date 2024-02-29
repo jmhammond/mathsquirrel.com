@@ -18,9 +18,15 @@ cascade:  # future reference, this is all here to make the list.html template be
 
 Here are some resources I've developed for classes at Wichita State University: 
 
-(I'll make this pretty in the future)
-
-[Calculus 1 class notes](/calc) 
-
-<a href="/discretebook"> {{< figure src="/discretebook/BookCover.png" width="30%" default="true" alt="The textbook's print book cover." caption="Discrete Math for Shockers">}} 
-</a>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div style="margin-right: 20px;">
+    <a href="/calc">
+      {{< figure src="/calc/calculus.jpeg" width="50%" default="true" alt="bing's dall-e generated image for text that looks very mathematical." caption="Calculus 1 class notes">}} 
+    </a>
+  </div>
+  <div style="margin-left: 20px;">
+    <a href="/discretebook">
+      {{< figure src="/discretebook/BookCover.png" width="100%" default="true" alt="The textbook's print book cover." caption="Discrete Math for Shockers">}} 
+    </a>
+  </div>
+</div>
