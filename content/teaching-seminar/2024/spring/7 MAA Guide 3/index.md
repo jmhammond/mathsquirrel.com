@@ -10,7 +10,7 @@ ShowCodeCopyButtons = false
 ShowBreadCrumbs = false
 showReadingTime= false
 summary= "Discussing pages 26-44 of the guide on choosing appropriate mathematical tasks."
-slug = "instructional-guide-2"
+slug = "instructional-guide-3"
 +++
 
 We continue our series of reading and working through the [MAA Instructional Practices Guide](https://nextcloud.math.wichita.edu/index.php/s/T82WC4YNSizG5km). This is part 3, in which we review pages 26-44 on selecting mathematically appropriate tasks. 
@@ -35,3 +35,9 @@ Contrast Low-level vs. high-level
 - Small groups, come up with ideas of activities that are: 
   - low-level
   - high-level
+
+## Neat results 
+
+Initially, I'd expected us to conclude most of our activities in college algebra being low-level (and it's true, many are "what is 5*9?" etc), but we came up with a very large list of high-level activities that, when we put them on post-its on the board and really discussed them, are giving some deeper thinking on the part of students.  
+
+My biggest regret is that I didn't take a picture of the post-its on the board 😩   It was a neat natural histogram of pedagogy!
