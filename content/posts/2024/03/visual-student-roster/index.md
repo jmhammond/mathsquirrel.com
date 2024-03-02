@@ -228,3 +228,5 @@ I also spend hours with Copilot trying to port it to Firefox, but after 3 hours,
 
 You can actually see all of the [github copilot chat history in a json file](./chat.json), if you'd like to see the whole journey. I've yada-yada'd over a lot of details. 
 
+Basically Github Copilot took what would have been a weekend project, and allowed me to complete the entire extension from manifest to shipping on a single Friday. Not bad!
+
