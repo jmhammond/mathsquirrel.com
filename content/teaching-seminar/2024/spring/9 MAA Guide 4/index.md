@@ -10,7 +10,7 @@ ShowCodeCopyButtons = false
 ShowBreadCrumbs = false
 showReadingTime= false
 summary= "Discussing pages 49-58 of the guide on the basics of assessment."
-slug = "instructional-guide-3"
+slug = "instructional-guide-4"
 thumbAlt = "Photo by Nguyen Dang Hoang Nhu via https://unsplash.com/photos/person-writing-on-white-paper-qDgTQOYk6B8"
 +++
 

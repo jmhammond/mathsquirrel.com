@@ -14,7 +14,7 @@ I'm writing this as kind of a journal of the steps taken in order that the event
 
 I had chaired the committee for four years (2016-2020), relocating it to the heart of campus and growing the event by 57%. It was my baby, and I wasn't going to let some administrative disfunction kill it.  
 
-I called the lady who had initially been labeled co-chair, in order to ask her what has been done. She said, "I resigned. I resigned. I have nothing to do with it."  She is a apparently an unhelpful human being. 
+I called the lady who had initially been labeled co-chair, in order to ask her what has been done. She said, "I resigned. I resigned. I have nothing to do with it."  I was less than pleased with her as a person.
 
 Next I contacted the whole (remaining) committee, introduced myself, explained why it's important to host the event, and asked if they would vote me in.  By the next day, I had the majority, and so I took over.
 
