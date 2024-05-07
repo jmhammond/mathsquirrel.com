@@ -28,7 +28,7 @@ There is no extra credit - only normal credit!
 ### How do I raise my grade? 
 
 The semester is over and there were many, many chances to earn credit on learning targets. Your final grade is what you earned and there is no way to raise (or lower) your grade.
-
+ 
 ### Can I retake learning target ___? 
 
 The learning targets showed up four weekends in a row and then again during the last week and finals week there are no additional retakes.
@@ -36,8 +36,6 @@ The learning targets showed up four weekends in a row and then again during the 
 ### You're really into squirrels. What's the deal with that? 
 
 They've just always been my favorite animal. In fact, my wife got me a toy squirrel for our first valentine's day back in college... It's been a long love of squirrels!
-
-{{<img src="fatsquirrel.png" alt="Fat Squirrel climbing my lap">}}
 
 ### I missed checkpoint _; can I do it now? 
 
@@ -47,7 +45,7 @@ No. In exchange for hard deadlines, we had opportunities to revisit the learning
 
 Maybe? My Fall 2023 (current) schedule is: 
 
-* Math 321 - Discrete Structures 1 in-person and online
+* Math 321 - Discrete Structures 1
     - for CS majors and secondary ed 
 * Math 231 - "Discrete Mathematics" 
     - it's different than the other one. 
