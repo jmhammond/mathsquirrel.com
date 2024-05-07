@@ -3,6 +3,10 @@ title: "Frequently Asked Questions"
 author: ["John Hammond"]
 date: 2024-05-07
 summary: "Answering many questions that I frequently get after the semester."
+mathjax: true
+showbreadcrumbs: true
+showTableOfContents: false
+showDate: false
 ---
 
 ### What is my grade?
