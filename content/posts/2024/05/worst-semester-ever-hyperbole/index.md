@@ -18,6 +18,6 @@ I do *open book, open note*, take home quizzes that students have nearly 3.5 *da
 
 I have a very crude saying about how I teach: "I will give you the softest toilet paper in the world, but you have to wipe your own ass."
 
-I don't think some students could find their ass if even if they took a minute to get their head of out it. 
+I'm not confident some students could find their ass even if they took a minute to get their head of out it. 
 
 
