@@ -12,9 +12,9 @@ This semester has been wild.  Like all semesters, I have great students! But I a
 
 Part of this is on me, because I record my lectures and have a *laissez-faire* approach to class. But I've always done this.
 
-Last semester, I taught two sections of calculus 1, and my ending the semester F rate (no students ended the semester with a D) was 18% (8 of 44 students).  That's, of course, pretty bad, but 2 of those students cheated multiple times and so received a failing grade in the course. If we ignore them,  it's 14% failure rate (6 of 42 students that matter). For calculus 1, that's actually not bad.  I'd love for more people to pass, but our three year institution DF rate for calc 1 is 30%.
+Last Spring, I taught two sections of calculus 1, and my ending the semester F rate (no students ended the semester with a D) was 18% (8 of 44 students).  That's, of course, pretty bad, but 2 of those students cheated multiple times and so received a failing grade in the course. If we ignore them,  it's 14% failure rate (6 of 42 students that matter). For calculus 1, that's actually not bad.  I'd love for more people to pass, but our three year institution DF rate for calc 1 is 30%.
 
-This year, though, has been something else...
+This semester, though, has been something else...
 
 I do *open book, open note*, take home quizzes that students have nearly 3.5 *days* to complete (you read that correctly, they have between  Thursday at 1pm and Sunday at 11:59pm). Towards the end of the semester, I had 16 of my 65 students still enrolled who **did not submit anything**.  I'm likely the easiest possible calc class for my grading policy, and 25% of my students weren't even trying at the end.
 
