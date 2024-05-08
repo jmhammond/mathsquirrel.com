@@ -15,7 +15,7 @@ I can't talk about grades over email due to [FERPA regulations.](https://www2.ed
 
 ### I got 5/10 on the final, can I get a C in the class? 
 
-Sorry, no. We discussed how to read the grade report [in this video from the last Wednesday of class](https://wichitaedu.sharepoint.com/:v:/r/sites/CalculusImtwrf113000MATH-24_ace8bae6-90a5-11ee-af7e-51053b500ccc/Shared%20Documents/General/Recordings/242%20Class%20Meeting-20240501_172123-Meeting%20Recording.mp4?csf=1&web=1&e=wVwNjn&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MTQ0LjE1fX0%3D). Since you're asking, I presume you haven't watched it; it answers your question.
+Sorry, no. We discussed how to read the grade report [in this video from the last Wednesday of class](https://wichitaedu.sharepoint.com/:v:/r/sites/CalculusImtwrf113000MATH-24_ace8bae6-90a5-11ee-af7e-51053b500ccc/Shared%20Documents/General/Recordings/242%20Class%20Meeting-20240501_172123-Meeting%20Recording.mp4?csf=1&web=1&e=wVwNjn&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MTQ0LjE1fX0%3D). The video indirectly answers your question.
 
 ### I got almost all of the question right on ___. Can I get credit? 
 
