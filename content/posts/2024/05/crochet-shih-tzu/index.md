@@ -2,6 +2,7 @@
 title: "Crochet: The Hardest Thing I ever made"
 author: ["John Hammond"]
 date: 2024-05-20
+feature: "*thumb*"
 summary: "Crochet (realistic!) shih tzu dog for a colleague at work."
 ---
 
