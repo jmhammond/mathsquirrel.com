@@ -48,3 +48,12 @@ I'll be giving Linda the gift on Wednesday after one of my meetings. I've includ
 
 
 And I'm definitely not making another one! 
+
+### Update
+
+I got a thank you note from Linda: 
+
+> Omg!!!!! YOU MADE THIS??????  WOW this looks like Breeze!!!!!!!!!!!!!!!!!!!!!!!!!!!  That’s my dogs name!!  Thank you so much you are very talented!! You could make doing that for pet owners WOW!!!!  This is awesome!
+ > Thanks John!!! 😁😁😁😁😁
+ 
+ It was very well received!  
