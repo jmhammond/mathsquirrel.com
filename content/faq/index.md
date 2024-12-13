@@ -51,11 +51,9 @@ No. In exchange for hard deadlines, we had opportunities to revisit the learning
 
 ### Are you teaching ___? 
 
-Maybe? My Fall 2023 (current) schedule is: 
+Maybe? My Spring 2025 (current) schedule is: 
 
 * Math 321 - Discrete Structures 1
     - for CS majors and secondary ed 
-* Math 231 - "Discrete Mathematics" 
-    - it's different than the other one. 
-* Math 531 - History of Mathematics 
-    - Yes, it is as awesome as you've heard.
+* Math 322 - Discrete Structures 2
+    - exploring more mathematical objects and languages.
