@@ -52,3 +52,7 @@ here](./relationsTestData.txt). Once again, your program will be run as `./stude
 There should be **nothing** else printed to stdout.
 
 I will be trimming out whitespace, so don't worry about that.
+
+## Submitting
+
+Send me an email with your source file. If there's necessary (nonstandard) headers or supplemental files, be sure to include them. Please also tell me how you compiled your assignment (maven, g++, javac) if relevant.
