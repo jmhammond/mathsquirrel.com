@@ -1,7 +1,7 @@
 ---
 author: John Hammond
 title: "History of Math"
-date: Fall 2022
+date: 2022
 description: "Intro to the History of Mathematics"
 ShowBreadCrumbs: false
 ---
