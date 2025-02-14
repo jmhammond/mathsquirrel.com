@@ -8,7 +8,7 @@ tocopen: false
 showDate: false
 ---
 
-Implement the reflexive, symmetric, and transitive closure algorithms.
+Implement the transitive, reflexive, and symmetric closure algorithms.
 <!--more-->
 
 Familiarize yourself with the [basics of the assignments](../basics/) and ask questions if you have them!
@@ -43,7 +43,7 @@ here](./relationsTestData.txt). Once again, your program will be run as `./stude
 ## Output
 
 -   To *stdout*: an $n\times n$ 0-1 matrix in the format described
-    above that is the reflexive, symmetric, and transitive closure of the initial relation.
+    above that is the transitive, reflexive, and symmetric closure of the initial relation.
 
 ``` text
 {{1, 1, 1, 1, 0}, {1, 1, 1, 1, 0}, {1, 1, 1, 1, 0}, {1, 1, 1, 1, 0}, {0, 0, 0, 0, 1}} 
