@@ -43,7 +43,36 @@ For the above example:
 16
 ```
 
-## Note: Not all number have good floating point representations.  
+## Roughly how I implemented the code: 
+
+### Prefix:
+For the prefix calculator, I used a stack data structure and popped values off until I got an operation, followed by two numbers. Then I did the calculated the result and pushed everything back onto the stack: 
+
+Input:
+`+ - 4 3 14` 
+
+![](./prefix_calc.jpeg)
+
+### Postfix
+For the postfix calculator, I used a list with a recursive function with the following idea: 
+1. We always compute the first three items on the list, if there are three items
+2. Then we need to pass our computation as the new front of the list and compute the rest.
+3. We'll stop when the result has fewer than three items - it's just a number, the answer
+
+Example: (without commas or brackets, underlines are the new numbers)
+```
+compute(3 2 + 1 - 8 /)
+= compute(_5_ 1 - 8 /)
+= compute(_4_ 8 /)
+= compute(_0.5_)
+= 0.5
+```
+
+## Floating point representation 
+
+{{< alert >}}
+Not all number have good floating point representations.  
+{{< /alert >}}
 
 For example, type this into the python interpreter:
 ```
