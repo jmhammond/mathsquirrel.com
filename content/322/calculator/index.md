@@ -30,10 +30,10 @@ One or more lines of computations, properly formatted in pre- or post-fix, with 
 8 7 / 14 * 
 ```
 
-Here is a sample test file](./calcTestData.txt)
+[Here is a sample test file](./calcTestData.txt)
 
 ## Output
-To /stdout/, the answer to each question, one line per answer
+To `stdout`, the answer to each question, one line per answer
 
 For the above example: 
 
@@ -54,7 +54,7 @@ You’ll see
 0.30000000000000004
 ```
 
-So that we don’t have to worry about representation in this assignment (that’s not the point), if you print to stdout the number 0.30000000000000004, my checker will be smart enough to know that your calculation should be 0.3.  I will compute $abs(your answer - mine) < 0.001$.
+So that we don’t have to worry about representation in this assignment (that’s not the point), if you print to stdout the number 0.30000000000000004, my checker will be smart enough to know that your calculation should be 0.3.  I will compute `abs(your answer - mine) < 0.001`.
 
 
 ## Submitting
