@@ -1,7 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 author: ["John Hammond"]
-date: 2024-05-07
+date: 2025-12-08
 summary: "Answering many questions that I frequently get after the semester."
 mathjax: true
 showbreadcrumbs: true
@@ -9,23 +9,29 @@ showTableOfContents: false
 showDate: false
 ---
 
+Below I'm answering a number of questions for each category of Shocker. I will be responding to emails throughout break periodically, but most common questions are answered below.
+
+If you are an undergraduate emailing about grades, the email will be deleted and ignored. It's not personal, as said during the last week of classes!
+
+# Undergraduate Students
+
 ### What is my grade?
 
 I can't talk about grades over email due to [FERPA regulations.](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html) Your final letter grade is on [MyWSU](https://mywsu.wichita.edu). 
 
-### I got 5/10 on the final, can I get a C in the class? 
+### (Math 321) I got 4/9 on the final, can I get a C in the class? 
 
-Sorry, no. We discussed how to read the grade report [in this video from the last Wednesday of class](https://wichitaedu.sharepoint.com/:v:/r/sites/CalculusImtwrf113000MATH-24_ace8bae6-90a5-11ee-af7e-51053b500ccc/Shared%20Documents/General/Recordings/242%20Class%20Meeting-20240501_172123-Meeting%20Recording.mp4?csf=1&web=1&e=wVwNjn&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MTQ0LjE1fX0%3D). The video indirectly answers your question.
+Sorry, no. We discussed how to read the grade report in class on Tuesday.
 
-### I got almost all of the question right on ___. Can I get credit? 
+### (Math 321) I got almost all of the question right on ___. Can I get credit? 
 
 Sorry, no. The grading is, on the one hand, draconian because it is "all right or it's wrong." However, every individual learning target has the opportunity to be revisited many, many times(!) with each learning target appearing up to four weeks in a row and then again during the last week of classes and finals week. And remember, they've been open book, open note, and you had 3.5 days to do them.
 
 ### Can we play chess?
 
-Sure! Send me a challenge on chess.com. I’m `jmhammond`.  Please also message me let me know who you are.
+Please do! Send me a challenge on chess.com. I’m `jmhammond`.  Please also message me let me know who you are because I ignore games from strangers.
 
-### I have an $x$+ grade, can you round up?    (here $x\in \\{B, C, D\\}$)
+### (Math 321) I have an $x$+ grade, can you round up?    (here $x\in \\{B, C, D\\}$)
 
 No.
 
@@ -51,9 +57,17 @@ No. In exchange for hard deadlines, we had opportunities to revisit the learning
 
 ### Are you teaching ___? 
 
-Maybe? My Spring 2025 (current) schedule is: 
+Maybe? My Spring 2026 (current) schedule is: 
 
-* Math 321 - Discrete Structures 1
-    - for CS majors and secondary ed 
-* Math 322 - Discrete Structures 2
-    - exploring more mathematical objects and languages.
+* Math 242: Calculus 1
+    - Getting folks started on their math journey.
+* Math 243: Calculus 2
+    - I'm planning to teach this one a little differently than WSU historically has. I'll be starting with sequences and series and later working on integration techniques. It's (kind of) how Newton originally presented it in *Principia*. See you there!
+
+# Graduate Students
+
+Returning or new GTA? Either way, I'm excited to work with you on your journey growing as a teacher. I'll be replying periodically through break. If you want to talk sooner, send me a text on Teams. 
+
+# Administrators
+
+I'm honored that you're reading this! If you want to get in contact with me quickly, send me a message on Teams or text my cell phone. 
