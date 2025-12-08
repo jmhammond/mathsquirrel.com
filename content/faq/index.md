@@ -5,8 +5,8 @@ date: 2025-12-08
 summary: "Answering many questions that I frequently get after the semester."
 mathjax: true
 showbreadcrumbs: true
-showTableOfContents: false
-showDate: false
+showTableOfContents: true
+showDate: true
 ---
 
 Below I'm answering a number of questions for each category of Shocker. I will be responding to emails throughout break periodically, but most common questions are answered below.
