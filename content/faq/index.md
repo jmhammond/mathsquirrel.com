@@ -24,6 +24,8 @@ I can't talk about grades over email due to [FERPA regulations.](https://www2.ed
 No. You ended up with a 69% because either: 
 
 1. You submitted the extra credit portfolio and went from 65% to 69%. That was your grade increase. You had a D. Now you have a D+.
+2. You did not submit the extra credit portfolio, so your grade doesn't change.
+
 ### Can we play chess?
 
 Please do! Send me a challenge on chess.com. I’m `jmhammond`.  Please also message me let me know who you are because I ignore games from strangers.
