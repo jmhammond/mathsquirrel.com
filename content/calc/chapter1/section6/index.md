@@ -33,7 +33,7 @@ Below I work many examples in the video
 ### Caution! 
 The limit laws only work if the limit exists and is finite! For example, we know
 $$
-\lim_{x\to 0} \frac{1}{x^2} = 0 \text{  and  } \lim_{x\to 0} \frac{1}{x^4} = 0
+\lim_{x\to 0} \frac{1}{x^2} = DNE \text{  and  } \lim_{x\to 0} \frac{1}{x^4} = DNE
 $$
 but ...
 $$

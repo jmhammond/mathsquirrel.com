@@ -1,13 +1,19 @@
 ---
 title: "Frequently Asked Questions"
 author: ["John Hammond"]
-date: 2024-05-07
+date: 2025-12-08
 summary: "Answering many questions that I frequently get after the semester."
 mathjax: true
 showbreadcrumbs: true
-showTableOfContents: false
-showDate: false
+showTableOfContents: true
+showDate: true
 ---
+
+Below I'm answering a number of questions for each category of Shocker. I will be responding to emails throughout break periodically, but most common questions are answered below.
+
+If you are an undergraduate emailing about grades, the email will be deleted and ignored. It's not personal, as said during the last week of classes!
+
+# Undergraduate Students
 
 ### What is my grade?
 
@@ -18,13 +24,11 @@ I can't talk about grades over email due to [FERPA regulations.](https://www2.ed
 No. You ended up with a 69% because either: 
 
 1. You submitted the extra credit portfolio and went from 65% to 69%. That was your grade increase. You had a D. Now you have a D+.
-2. You did not submit the extra credit portfolio, so your grade doesn't change.
-
 ### Can we play chess?
 
-Sure! Send me a challenge on chess.com. I’m `jmhammond`.  Please also message me let me know who you are.
+Please do! Send me a challenge on chess.com. I’m `jmhammond`.  Please also message me let me know who you are because I ignore games from strangers.
 
-### I have an $x$+ grade, can you round up?    (here $x\in \\{B, C, D\\}$)
+### (Math 321) I have an $x$+ grade, can you round up?    (here $x\in \\{B, C, D\\}$)
 
 No.
 
@@ -52,3 +56,11 @@ And Fall 2026 schedule is
     - for CS majors and secondary ed 
 * Math 243 - Calculus 2
     - continuing the calculus 
+
+# Graduate Students
+
+Returning or new GTA? Either way, I'm excited to work with you on your journey growing as a teacher. I'll be replying periodically through break. If you want to talk sooner, send me a text on Teams. 
+
+# Administrators
+
+I'm honored that you're reading this! If you want to get in contact with me quickly, send me a message on Teams or text my cell phone. 
