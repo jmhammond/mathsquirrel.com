@@ -1,7 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 author: ["John Hammond"]
-date: 2025-12-08
+date: 2026-05-14
 summary: "Answering many questions that I frequently get after the semester."
 mathjax: true
 showbreadcrumbs: true
