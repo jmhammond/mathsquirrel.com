@@ -58,15 +58,6 @@ They've just always been my favorite animal. In fact, my wife got me a toy squir
 
 No. In exchange for hard deadlines, we had opportunities to revisit the learning targets multiple times throughout the semester. This provided the flexibility of missing a checkpoint but being able to recover the material during the semester. -->
 
-### Are you teaching ___? 
-
-Maybe? Fall 2026 schedule is
-
-* Math 321 - Discrete Structures 1
-    - for CS majors and secondary ed 
-* Math 243 - Calculus 2
-    - continuing the calculus 
-
 # Graduate Students
 
 Returning or new GTA? Either way, I'm excited to work with you on your journey growing as a teacher. I'll be replying periodically through break. 
