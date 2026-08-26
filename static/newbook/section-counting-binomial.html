@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Combinatorial Proofs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-0 { system: extends lower-alpha; prefix: '('; suffix: ') '; }
+</style>
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: true,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:image" content="https://mathsquirrel.com/discretebook/external/WSULogo.png">
+<meta property="og:image" content="https://mathsquirrel.com/discretebook/external/WSULogo.png">
+<meta name="twitter:image:alt" content="Document Logo">
+<meta property="og:image:alt" content="Document Logo">
+<meta name="twitter:title" content="Discrete Math for Shockers">
+<meta property="og:title" content="Discrete Math for Shockers">
+<meta property="book:title" content="Discrete Math for Shockers">
+<meta name="twitter:card" content="summary_large_image">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.50"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.50"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.7';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathsquirrel.com/discretebook"><img src="external/WSULogo.png" alt="Logo image"></a><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="discrete-class-notes.html"><span class="title">Discrete Math for Shockers</span></a></div>
+<p class="byline">John Hammond</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="section-counting-combperm.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch_counting.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="section-counting-fib.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\ds{\displaystyle}
+\def\d{\displaystyle}
+\def\N{\mathbb N}
+\def\B{\mathbf{B}}
+\def\Z{\mathbb Z}
+\def\Q{\mathbb Q}
+\def\R{\mathbb R}
+\def\C{\mathbb C}
+\def\F{\mathbb F}
+\def\pow{\mathcal P}
+\def\inv{^{-1}}
+\def\iff{\leftrightarrow}
+\def\Iff{\Leftrightarrow}
+\def\land{\wedge}
+\def\And{\bigwedge}
+\def\entry{\entry}
+\def\AAnd{\d\bigwedge\mkern-18mu\bigwedge}
+\def\Vee{\bigvee}
+\def\VVee{\d\Vee\mkern-18mu\Vee}
+\def\imp{\rightarrow}
+\def\Imp{\Rightarrow}
+\def\Fi{\Leftarrow}
+\def\var{\mbox{var}}
+\def\Th{\mbox{Th}}
+\def\entry{\entry}
+\def\sat{\mbox{Sat}}
+\def\con{\mbox{Con}}
+\def\iffmodels{\bmodels\models}
+\def\dbland{\bigwedge \!\!\bigwedge}
+\def\dom{\mbox{dom}}
+\def\rng{\mbox{range}}
+\def\isom{\cong}
+\def\st{\mid}
+\def\divides{\mid}
+\def\and{\text{ and }}
+\def\lcm{\text{lcm}}
+\def\modulus{\mathbin{\%}}
+\newcommand{\vtx}[2]{node[fill,circle,inner sep=0pt, minimum size=4pt,label=#1:#2]{}}
+\newcommand{\va}[1]{\vtx{above}{#1}}
+\newcommand{\vb}[1]{\vtx{below}{#1}}
+\newcommand{\vr}[1]{\vtx{right}{#1}}
+\newcommand{\vl}[1]{\vtx{left}{#1}}
+\renewcommand{\v}{\vtx{above}{}}
+\def\circleA{(-.5,0) circle (1)}
+\def\circleAlabel{(-1.5,.6) node[above]{$A$}}
+\def\circleB{(.5,0) circle (1)}
+\def\circleBlabel{(1.5,.6) node[above]{$B$}}
+\def\circleC{(0,-1) circle (1)}
+\def\circleClabel{(.5,-2) node[right]{$C$}}
+\def\twosetbox{(-2,-1.4) rectangle (2,1.4)}
+\def\threesetbox{(-2.5,-2.4) rectangle (2.5,1.4)}
+\def\ansfilename{practice-answers}
+\def\shadowprops{{fill=black!50,shadow xshift=0.5ex,shadow yshift=0.5ex,path fading={circle with fuzzy edge 10 percent}}}
+\newcommand{\hexbox}[3]{
+\def\x{-cos{30}*\r*#1+cos{30}*#2*\r*2}
+\def\y{-\r*#1-sin{30}*\r*#1}
+\draw (\x,\y) node{#3};
+}
+\renewcommand{\bar}{\overline}
+\newcommand{\card}[1]{\left| #1 \right|}
+\newcommand{\twoline}[2]{\begin{pmatrix}#1 \\ #2 \end{pmatrix}}
+\newcommand{\fixspacing}{\vspace{0pt plus 1filll}\mbox{}}
+\usepackage{cancel} 
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="front-matter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul id="ptx-toc-group-front-matter" class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-matter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="front-matter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="front-matter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="front-matter-6.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_basics.html" class="internal"><span class="codenumber">1</span> <span class="title">Basic Objects and Symbols</span></a></div>
+<ul id="ptx-toc-group-ch_basics" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-prop-logic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul id="ptx-toc-group-section-prop-logic" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-prop-logic.html#section-prop-logic-3" class="internal"><span class="title">The Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-prop-logic.html#subsec-truthtables" class="internal"><span class="title">Truth Tables for Logical Connectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-prop-logic.html#section-prop-logic-5" class="internal"><span class="title">Computer Corner</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-prop-logic.html#section-prop-logic-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_objects_sets.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets</span></a></div>
+<ul id="ptx-toc-group-sec_objects_sets" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_objects_sets.html#sec_objects_sets-3" class="internal"><span class="title">Basic terminology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_objects_sets.html#sec_objects_sets-4" class="internal"><span class="title">Operations on sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_objects_sets.html#sec_objects_sets-5" class="internal"><span class="title">Verifying Set Identities</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_objects_sets.html#sec_objects_sets-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_relationsfunctions.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Relations and Functions</span></a></div>
+<ul id="ptx-toc-group-sec_relationsfunctions" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_relationsfunctions.html#sec_relationsfunctions-3" class="internal"><span class="title">Relations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_relationsfunctions.html#sec_relationsfunctions-4" class="internal"><span class="title">Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_relationsfunctions.html#sec_relationsfunctions-5" class="internal"><span class="title">Computer Corner</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_relationsfunctions.html#sec_relationsfunctions-6" class="internal"><span class="title">What kind of object? Binary operations vs. <span class="process-math">\(a\mathrel{R} b\)</span></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_relationsfunctions.html#sec_relationsfunctions-8" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_logic.html" class="internal"><span class="codenumber">2</span> <span class="title">Symbolic Logic and Proofs</span></a></div>
+<ul id="ptx-toc-group-ch_logic" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-logic-equivalences.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Logical Equivalences</span></a></div>
+<ul id="ptx-toc-group-section-logic-equivalences" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-equivalences.html#section-logic-equivalences-3" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-logic-equivalences.html#section-logic-equivalences-4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_application_set_proofs.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Application: Set Equivalences</span></a></div>
+<ul id="ptx-toc-group-sec_application_set_proofs" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_application_set_proofs.html#sec_application_set_proofs-3" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_application_set_proofs.html#sec_application_set_proofs-4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-logic-quantifiers.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Propositional Functions and Quantifiers</span></a></div>
+<ul id="ptx-toc-group-section-logic-quantifiers" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-quantifiers.html#section-logic-quantifiers-3" class="internal"><span class="title">Predicates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-quantifiers.html#section-logic-quantifiers-4" class="internal"><span class="title">Logical Quantifiers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-logic-quantifiers.html#section-logic-quantifiers-5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-logic-arguments.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Logical Arguments</span></a></div>
+<ul id="ptx-toc-group-section-logic-arguments" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-arguments.html#section-logic-arguments-3" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-logic-arguments.html#section-logic-arguments-4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-logic-proofs.html" class="internal"><span class="codenumber">2.5</span> <span class="title">An introduction to proofs</span></a></div>
+<ul id="ptx-toc-group-section-logic-proofs" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-3" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-4" class="internal"><span class="title">Basic concepts of proof</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-5" class="internal"><span class="title">Direct Proof</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-6" class="internal"><span class="title">Indirect Proofs</span></a></div>
+<ul id="ptx-toc-group-section-logic-proofs-6" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-6-3" class="internal"><span class="title">Proof by Contraposition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-6-4" class="internal"><span class="title">Proof by Contradiction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-7" class="internal"><span class="title">Proofs of equivalence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-8" class="internal"><span class="title">Proof by cases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-9" class="internal"><span class="title">Existence Proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-10" class="internal"><span class="title">Uniqueness proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-11" class="internal"><span class="title">Vacuous and Trivial Proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-12" class="internal"><span class="title">Counterexamples Revisited</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-logic-proofs.html#section-logic-proofs-13" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-prop-supplementatal.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Chapter Review</span></a></div>
+<ul id="ptx-toc-group-section-prop-supplementatal" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-prop-supplementatal.html#exercises_logic-conc" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_numtheory.html" class="internal"><span class="codenumber">3</span> <span class="title">Some Classic Number Theory</span></a></div>
+<ul id="ptx-toc-group-ch_numtheory" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-numtheory-divcong.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Divisibility and Congruences</span></a></div>
+<ul id="ptx-toc-group-section-numtheory-divcong" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-numtheory-divcong.html#section-numtheory-div" class="internal"><span class="title">The Divides Relation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-numtheory-divcong.html#section-numtheory-cong" class="internal"><span class="title">The Congruence Relation</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-numtheory-divcong.html#section-numtheory-divcong-5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-primes.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Prime Numbers</span></a></div>
+<ul id="ptx-toc-group-section-primes" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-primes.html#section-primes-3" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-primes.html#computer-corner-sieve" class="internal"><span class="title">Computer Corner - Implementing the Sieve</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-primes.html#section-primes-5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-gcd-euclid.html" class="internal"><span class="codenumber">3.3</span> <span class="title">GCDs and The Euclidean Algorithm</span></a></div>
+<ul id="ptx-toc-group-section-gcd-euclid" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-gcd-euclid.html#section-gcd-euclid-3" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-gcd-euclid.html#section-gcd-euclid-4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-multiplicative-inverses.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Multiplicative Inverses</span></a></div>
+<ul id="ptx-toc-group-section-multiplicative-inverses" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-multiplicative-inverses.html#section-multiplicative-inverses-2" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-multiplicative-inverses.html#section-multiplicative-inverses-3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-numtheory-modularexp.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Modular exponentiation</span></a></div>
+<ul id="ptx-toc-group-section-numtheory-modularexp" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-numtheory-modularexp.html#section-numtheory-modularexp-3" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-numtheory-modularexp.html#section-numtheory-modularexp-4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-numtheory-encryption.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Application: Encryption</span></a></div>
+<ul id="ptx-toc-group-section-numtheory-encryption" class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-numtheory-encryption.html#subsection-numtheory-ciphers" class="internal"><span class="title">Basic Cipher Examples</span></a></div>
+<ul id="ptx-toc-group-subsection-numtheory-ciphers" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-numtheory-encryption.html#subsection-numtheory-ciphers-11" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-numtheory-encryption.html#subsection-numtheory-sage" class="internal"><span class="title">Number Theory Using Sage</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-numtheory-encryption.html#rsa-activity" class="internal"><span class="title">The RSA Activity</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch_sequences.html" class="internal"><span class="codenumber">4</span> <span class="title">Sequences, Recurrence, and Induction</span></a></div>
+<ul id="ptx-toc-group-ch_sequences" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-objects-seqseries.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Sequences and Series</span></a></div>
+<ul id="ptx-toc-group-section-objects-seqseries" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-objects-seqseries.html#section-objects-seqseries-3" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-objects-seqseries.html#section-objects-seqseries-4" class="internal"><span class="title">Computer Corner</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-objects-seqseries.html#section-objects-seqseries-5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-solvingrecurrences.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Solving Recurrence Relations</span></a></div>
+<ul id="ptx-toc-group-section-solvingrecurrences" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solvingrecurrences.html#section-solvingrecurrences-2" class="internal"><span class="title">Motivation, or, why do I care?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solvingrecurrences.html#section-solvingrecurrences-3" class="internal"><span class="title">Solving recurrence relations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solvingrecurrences.html#section-solvingrecurrences-4" class="internal"><span class="title">Solving particularly nice recurrence relations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solvingrecurrences.html#sec-recurrences-with-python" class="internal"><span class="title">Computer Corner</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-solvingrecurrences.html#section-solvingrecurrences-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_logic_induction.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Mathematical Induction</span></a></div>
+<ul id="ptx-toc-group-sec_logic_induction" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic_induction.html#math-induction" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic_induction.html#strong-induction" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_logic_induction.html#sec_logic_induction-5" class="internal"><span class="title">Computer Corner</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_logic_induction.html#sec_logic_induction-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch_counting.html" class="internal"><span class="codenumber">5</span> <span class="title">Counting Techniques</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch_counting">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-counting-basics.html" class="internal"><span class="codenumber">5.1</span> <span class="title">The Multiplicative and Additive Principles</span></a></div>
+<ul id="ptx-toc-group-section-counting-basics" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-counting-basics.html#section-counting-basics-3" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-counting-basics.html#section-counting-basics-4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-counting-combperm.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Permutations and Combinations</span></a></div>
+<ul id="ptx-toc-group-section-counting-combperm" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-counting-combperm.html#section-counting-combperm-3" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-counting-combperm.html#section-counting-combperm-4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="section-counting-binomial.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Combinatorial Proofs</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-section-counting-binomial">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-counting-binomial.html#section-counting-binomial-3" class="internal"><span class="title">Binomial Coefficients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-counting-binomial.html#section-counting-binomial-4" class="internal"><span class="title">Combinatorial Proofs</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-counting-binomial.html#section-counting-binomial-5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-counting-fib.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Counting Fibonacci numbers with tiles</span></a></div>
+<ul id="ptx-toc-group-section-counting-fib" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-counting-fib.html#section-counting-fib-2" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-counting-fib.html#section-counting-fib-3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="discrete-class-notes-8.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul id="ptx-toc-group-discrete-class-notes-8" class="structural toc-item-list"><li class="toc-item toc-solutions"><div class="toc-title-box"><a href="discrete-class-notes-8-1.html" class="internal"><span class="codenumber">A.</span> <span class="title">Solutions to the exercises</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="section-counting-binomial">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Combinatorial Proofs</span>
+</h1>
+<section class="introduction" id="section-counting-binomial-2">
+<div class="para" id="section-counting-binomial-2-1">We’re going to begin this section by doing a lot of tedious looking algebra, but then we’ll make a connection to what we’ve been doing. There’s a reason! Later in the section, we will introduce a new method of proof called, “combinatorial proof” in which we’re able to verify mathematical statements by counting!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="section-counting-binomial-3">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Binomial Coefficients</span>
+</h2>
+<div class="para logical" id="section-counting-binomial-3-2">
+<div class="para">As promised, we begin with some tedious calculations. Let’s start by expanding each of the following binomials:</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-2-1">
+\begin{equation*}
+(x+y)^0 = 1
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-2-2">
+\begin{equation*}
+(x+y)^1 = 1x + 1y
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-2-3">
+\begin{equation*}
+(x+y)^2 = 1x^2 + 2xy + 1y^2
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-2-4">
+\begin{equation*}
+(x+y)^3 = 1x^3 + 3x^2y + 3xy^2 + 1y^3
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-2-5">
+\begin{equation*}
+(x+y)^4 = 1x^4 + 4x^3y + 6x^2y^2 + 4xy^3 + 1y^4
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-2-6">
+\begin{equation*}
+(x+y)^5 = 1x^5 + 5x^4y + 10x^3 y^2 + 10x^2 y^3 + 5xy^4 + 1y^5
+\end{equation*}
+</div>
+<div class="para">...</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-3-3">If we arrange the coefficients of the binomials (binomial coefficients) in a triangle, we can find many really neat patterns.  In the West, this is usually called “Pascal’s Triangle” after Blaise Pascal (1600’s), though it was also discussed by the Chinese author Yang Hui (1200’s) and it’s called “Yang Hui’s triangle” in China.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="section-counting-binomial-3-4" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="section-counting-binomial-3-4-1">Neither Yang Hui nor Blaise Pascal invented it, but their works were popular and we settled on naming it after them.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/latex-image/pascal-small.svg" role="img" class="contained" alt="Pascal’s triangle. Numbers are arranged in rows in the shape of a triangle. The top number is 1. Next row is 1 and 1; next row is 1, 2, 1; next is 1, 3, 3, 1; and it continues. Each entry is found by adding the two entries above it: e.g. 3=1+2"></div>
+<div class="para logical" id="section-counting-binomial-3-6">
+<div class="para">There are lots of patterns hidden away in the triangle! Take a few minutes to look for some. Here are just a few to notice:</div>
+<ol class="decimal" id="section-counting-binomial-3-6-1">
+<li id="section-counting-binomial-3-6-1-1">
+<div class="para" id="section-counting-binomial-3-6-1-1-1">The entries on the left or right side of the triangle are all 1.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#section-counting-binomial-3-6-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="section-counting-binomial-3-6-1-2">
+<div class="para" id="section-counting-binomial-3-6-1-2-1">Any entry not on the border is the sum of the two entries above it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-6-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#section-counting-binomial-3-6-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="section-counting-binomial-3-6-1-3">
+<div class="para" id="section-counting-binomial-3-6-1-3-1">The triangle is symmetric.  In any row, entries on the left side are mirrored on the right side.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-6-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#section-counting-binomial-3-6-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="section-counting-binomial-3-6-1-4">
+<div class="para" id="section-counting-binomial-3-6-1-4-1">The sum of all entries on a given row is a power of 2.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-6-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#section-counting-binomial-3-6-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-3-7">A connection that Pascal did make in <em class="emphasis">Traité du triangle arithmétique</em> (Treatise on the Arithmetic Triangle) is that the entries in the table are actually combinations!  Here’s the triangle again, but written with combinations And rather than going through further linguistic torture, we can now refer to “combinations” as <dfn class="terminology">“binomial coefficients”</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/latex-image/pascal-small-binom.svg" role="img" class="contained" alt="Pascal’s triangle re-written with combinations. Numbers are arranged in rows in the shape of a triangle. The top number is (0 choose 0). Next row is (1 choose 0) and (1 choose 1);  Each entry is the (row choose column)"></div>
+<div class="para" id="section-counting-binomial-3-9">Now that we’ve connected the coefficients of the binomial to combinations, we can now write the formal binomial theorem as its often presented:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="section-counting-binomial-3-10"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Binomial Theorem.</span>
+</h3>
+<div class="para logical" id="section-counting-binomial-3-10-2-1">
+<div class="para">Let <span class="process-math">\(x \and y\)</span> be variables and <span class="process-math">\(n\)</span> a natural number, then</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-10-2-1-3">
+\begin{equation*}
+(x+y)^n = \sum_{k=0}^n \binom{n}{k} x^{n-k} y^{k}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="section-counting-binomial-3-10-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Video / Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/_X2WjIsgoDo?&amp;modestbranding=1&amp;rel=0" id="section-counting-binomial-3-10-3-1"></iframe></div>
+<div class="autopermalink" aria-hidden="true" data-description="Video / Answer 5.3.1.1"><a tabindex="-1" href="#section-counting-binomial-3-10-3" title="Copy heading and permalink for Video / Answer 5.3.1.1" aria-label="Copy heading and permalink for Video / Answer 5.3.1.1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Theorem 5.3.1: The Binomial Theorem"><a tabindex="-1" href="#section-counting-binomial-3-10" title="Copy heading and permalink for Theorem 5.3.1: The Binomial Theorem" aria-label="Copy heading and permalink for Theorem 5.3.1: The Binomial Theorem">🔗</a></div>
+</article>
+<details id="section-counting-binomial-3-11" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="section-counting-binomial-3-11-1">I’m a big Sherlock Holmes fan, so I want to acknowledge that (fictional) Professor James Moriaraty proved significant results about the binomial theorem.  He of course didn’t (because he’s not real), but also Isaac Newton and Jakob Bernoulli did it about 150 years before Moriarty would be born.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-3-11-2">... this was a really long way of saying I’m a nerd.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<div class="para" id="section-counting-binomial-3-12">Take a moment to compare the binomials we expanded in the beginning of the section with the summation in the Binomial Theorem to see how it all fits together.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-3-13">
+<div class="para">We can also return to the patterns we saw in the triangle and rewrite them in terms of binomial coefficients.</div>
+<ol class="decimal" id="section-counting-binomial-3-13-1">
+<li id="section-counting-binomial-3-13-1-1">
+<div class="para logical" id="section-counting-binomial-3-13-1-1-1">
+<div class="para">The entries on the left or right side of the triangle are all 1. In symbols, we’ll write:</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-13-1-1-1-1">
+\begin{equation*}
+\binom{n}{0} = \binom{n}{n} = 1
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-13-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#section-counting-binomial-3-13-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="section-counting-binomial-3-13-1-2">
+<div class="para logical" id="section-counting-binomial-3-13-1-2-1">
+<div class="para">Any entry not on the border is the sum of the two entries above it. In symbols:</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-13-1-2-1-1">
+\begin{equation*}
+\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-13-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#section-counting-binomial-3-13-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="section-counting-binomial-3-13-1-3">
+<div class="para logical" id="section-counting-binomial-3-13-1-3-1">
+<div class="para">The triangle is symmetric.  In any row, entries on the left side are mirrored on the right side. In symbols:</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-13-1-3-1-1">
+\begin{equation*}
+\binom{n}{k} = \binom{n}{n - k}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-13-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#section-counting-binomial-3-13-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="section-counting-binomial-3-13-1-4">
+<div class="para logical" id="section-counting-binomial-3-13-1-4-1">
+<div class="para">The sum of all entries on a given row is a power of 2. In symbols:</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-13-1-4-1-1">
+\begin{equation*}
+\binom{n}0 + \binom{n}1 + \binom{n}2 + \dots + \binom{n}{n} = 2^n
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-13-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#section-counting-binomial-3-13-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-3-14">Our goal for the remainder of the section is to give proofs of binomial identities. We’ll start with a very tedious algebraic way to do it and then introduce a new proof technique to deal with the same identity.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="section-counting-binomial-3-15"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="section-counting-binomial-3-15-1-1">
+<div class="para">Give an algebraic proof for the binomial identity</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-15-1-1-1">
+\begin{equation*}
+{n \choose k} = {n-1\choose k-1} + {n-1 \choose k}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-3-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<article class="proof" id="section-counting-binomial-3-15-2-1"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para logical" id="section-counting-binomial-3-15-2-1-1">
+<div class="para">By the definition of <span class="process-math">\({n \choose k}\text{,}\)</span> we have</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-15-2-1-1-2">
+\begin{equation*}
+{n-1 \choose k-1} = \frac{(n-1)!}{(n-1-(k-1))!(k-1)!} = \frac{(n-1)!}{(n-k)!(k-1)!}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-15-2-1-1-3">
+\begin{equation*}
+{n-1 \choose k} = \frac{(n-1)!}{(n-1-k)!k!}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-15-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-3-15-2-1-2">
+<div class="para">Thus, starting with the right-hand side of the equation:</div>
+<div class="displaymath process-math" id="section-counting-binomial-3-15-2-1-2-1">
+\begin{align*}
+{n-1 \choose k-1} + {n-1 \choose k} \amp = \frac{(n-1)!}{(n-k)!(k-1)!}+ \frac{(n-1)!}{(n-1-k)!\,k!}\\
+\amp = \frac{(n-1)!k}{(n-k)!\,k!} + \frac{(n-1)!(n-k)}{(n-k)!\,k!}\\
+\amp = \frac{(n-1)!(k+n-k)}{(n-k)!\,k!}\\
+\amp = \frac{n!}{(n-k)!\, k!}\\
+\amp = {n \choose k}.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-15-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-3-15-2-1-3">The second line (where the common denominator is found) works because <span class="process-math">\(k(k-1)! = k!\)</span> and <span class="process-math">\((n-k)(n-k-1)! = (n-k)!\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-15-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Proof 5.3.2.1.1"><a tabindex="-1" href="#section-counting-binomial-3-15-2-1" title="Copy heading and permalink for Proof 5.3.2.1.1" aria-label="Copy heading and permalink for Proof 5.3.2.1.1">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Solution 5.3.2.1"><a tabindex="-1" href="#section-counting-binomial-3-15-2" title="Copy heading and permalink for Solution 5.3.2.1" aria-label="Copy heading and permalink for Solution 5.3.2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 5.3.2"><a tabindex="-1" href="#section-counting-binomial-3-15" title="Copy heading and permalink for Example 5.3.2" aria-label="Copy heading and permalink for Example 5.3.2">🔗</a></div>
+</article>
+<div class="para" id="section-counting-binomial-3-16">That algebra had some fun manipulations if you’re into that kind of thing, but as 15th century mathematician Gerolamo Cardano said <em class="emphasis">Ars Magna</em>, it “is as refined as it is useless.”<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="section-counting-binomial-3-17" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="section-counting-binomial-3-17-1">Cardano was actually talking about square roots of negative numbers, what we now call complex numbers. He probably wouldn’t be impressed with me misquoting him. But he wasn’t a very nice person, so I don’t care.  I do love to talk about him, though, ask me about him sometime! (Have I reminded you about my math history class lately?)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-3-17-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details><div class="autopermalink" aria-hidden="true" data-description="Subsection: Binomial Coefficients"><a tabindex="-1" href="#section-counting-binomial-3" title="Copy heading and permalink for Subsection: Binomial Coefficients" aria-label="Copy heading and permalink for Subsection: Binomial Coefficients">🔗</a></div>
+</section>
+<section class="subsection" id="section-counting-binomial-4">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Combinatorial Proofs</span>
+</h2>
+<div class="para logical" id="section-counting-binomial-4-2">
+<div class="para">Here we introduce a new method of providing mathematical statements. Our goal is to show that an equality is true by <em class="emphasis">counting</em> each side of the equation differently, but showing that we’ve counted the same objects. In order to do this, we will make the following connection for things that binomial coefficients might represent:</div>
+<ul class="disc" id="section-counting-binomial-4-2-2">
+<li id="section-counting-binomial-4-2-2-1">
+<div class="para" id="p-derived-section-counting-binomial-4-2-2-1">
+<span class="process-math">\(\binom{n}{k}\)</span> is the number of ways to select <span class="process-math">\(k\)</span> objects from a set of <span class="process-math">\(n\)</span> objects.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-2-2-2">
+<div class="para" id="p-derived-section-counting-binomial-4-2-2-2">
+<span class="process-math">\(\binom{n}{k}\)</span> is the number subsets of size <span class="process-math">\(k\)</span> from a set of size <span class="process-math">\(n\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-2-2-3">
+<div class="para" id="p-derived-section-counting-binomial-4-2-2-3">
+<span class="process-math">\(\binom{n}{k}\)</span> is the number of bit strings of length <span class="process-math">\(n\)</span> with exactly <span class="process-math">\(k\)</span> 1’s</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-2-2-4">
+<div class="para" id="p-derived-section-counting-binomial-4-2-2-4">
+<span class="process-math">\(\binom{n}{k}\)</span> is the coefficient of <span class="process-math">\(x^{n-k}y^k\)</span> in the expansion of <span class="process-math">\((x+y)^n\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-2-2-5">
+<div class="para" id="p-derived-section-counting-binomial-4-2-2-5">
+<span class="process-math">\(\dots\)</span> there are many more ways of viewing binomial coefficients.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-2-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-4-3">
+<div class="para">For a combinatorial proof, we will follow this approach:</div>
+<ol class="decimal" id="section-counting-binomial-4-3-1">
+<li id="section-counting-binomial-4-3-1-1">
+<div class="para" id="p-derived-section-counting-binomial-4-3-1-1">Determine a question that can be answered by the particular equation.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#section-counting-binomial-4-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-3-1-2">
+<div class="para" id="p-derived-section-counting-binomial-4-3-1-2">Answer the question in two different ways</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#section-counting-binomial-4-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-3-1-3">
+<div class="para" id="p-derived-section-counting-binomial-4-3-1-3">Because those answers count the same object, we can equate their solutions.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#section-counting-binomial-4-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="para">Coming up with the question is often the hardest part.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="section-counting-binomial-4-4"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="section-counting-binomial-4-4-1-1">
+<div class="para">Give a combinatarial proof of the identity:</div>
+<div class="displaymath process-math" id="section-counting-binomial-4-4-1-1-1">
+\begin{equation*}
+{n \choose k} = {n-1\choose k-1} + {n-1 \choose k}.
+\end{equation*}
+</div>
+<div class="para">by viewing the binomial coefficients as counting subsets.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Video / Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/56Myzj8jzqk?&amp;modestbranding=1&amp;rel=0" id="section-counting-binomial-4-4-2-1"></iframe></div>
+<div class="autopermalink" aria-hidden="true" data-description="Video / Answer 5.3.3.1"><a tabindex="-1" href="#section-counting-binomial-4-4-2" title="Copy heading and permalink for Video / Answer 5.3.3.1" aria-label="Copy heading and permalink for Video / Answer 5.3.3.1">🔗</a></div>
+</div></details>
+<details id="section-counting-binomial-4-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="section-counting-binomial-4-4-3-1">We begin by asking a question, and answering the question in two ways:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-4-4-3-2">“How many subsets of size <span class="process-math">\(k\)</span> are there from a set of size <span class="process-math">\(n\text{?}\)</span>”<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-4-4-3-3">Answer one: There are <span class="process-math">\(\binom{n}{k}\)</span> such subsets.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-4-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-4-4-3-4">
+<div class="para">Answer two: Pick any element of the set. That element is either included in a subset, or it is not.</div>
+<ul class="disc" id="section-counting-binomial-4-4-3-4-1">
+<li id="section-counting-binomial-4-4-3-4-1-1">
+<div class="para" id="p-derived-section-counting-binomial-4-4-3-4-1-1">How many subsets contain this element? We will be picking from the remaining <span class="process-math">\(n-1\)</span> elements. Since we want the subsets to have <span class="process-math">\(k\)</span> elements, but we already have one of them, we have a total of <span class="process-math">\(\binom{n-1}{k-1}\)</span> such subsets.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-4-3-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-4-3-4-1-2">
+<div class="para" id="p-derived-section-counting-binomial-4-4-3-4-1-2">How many subsets <em class="emphasis">do not</em> contain this element? We will be picking from the remaining <span class="process-math">\(n-1\)</span> elements. Since we want the subsets to have <span class="process-math">\(k\)</span> elements, we have <span class="process-math">\(\binom{n-1}{k}\)</span> such subsets.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-4-3-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Thus there are <span class="process-math">\(\binom{n-1}{k-1} + \binom{n-1}{k}\)</span> subsets of <span class="process-math">\(k\)</span> elements from a set of <span class="process-math">\(n\)</span> elements.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-4-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-4-4-3-5">
+<div class="para">Because each answer counted the same objects, but in two different ways, those answers much be the same. Thus</div>
+<div class="displaymath process-math" id="section-counting-binomial-4-4-3-5-1">
+\begin{equation*}
+{n \choose k} = {n-1\choose k-1} + {n-1 \choose k}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-4-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.3.3.1"><a tabindex="-1" href="#section-counting-binomial-4-4-3" title="Copy heading and permalink for Solution 5.3.3.1" aria-label="Copy heading and permalink for Solution 5.3.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 5.3.3"><a tabindex="-1" href="#section-counting-binomial-4-4" title="Copy heading and permalink for Example 5.3.3" aria-label="Copy heading and permalink for Example 5.3.3">🔗</a></div>
+</article>
+<div class="para logical" id="section-counting-binomial-4-5">
+<div class="para">Some people find combinatorial proofs “more fun” because they tell a story. In this next example, if we used a formula, we’d write</div>
+<div class="displaymath process-math" id="section-counting-binomial-4-5-2">
+\begin{equation*}
+\binom{n}{0}=\frac{n!}{0!(n-0)!} = 1\text{.}
+\end{equation*}
+</div>
+<div class="para">Fine. But we could also see that this could actually be talking about cookies!</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="section-counting-binomial-4-6"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="section-counting-binomial-4-6-1-1">Give a combinatorial proof of <span class="process-math">\(\displaystyle \binom{n}0 = 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-4-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="section-counting-binomial-4-6-2-1">How about we ask how many ways can we take no cookies from a bag of <span class="process-math">\(n\)</span> cookies?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 5.3.4.1"><a tabindex="-1" href="#section-counting-binomial-4-6-2" title="Copy heading and permalink for Hint 5.3.4.1" aria-label="Copy heading and permalink for Hint 5.3.4.1">🔗</a></div>
+</div></details>
+<details id="section-counting-binomial-4-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="section-counting-binomial-4-6-3-1">
+<div class="para">Question: How many ways can we take no cookies from a bag of <span class="process-math">\(n\)</span> cookies?</div>
+<ol class="decimal" id="section-counting-binomial-4-6-3-1-2">
+<li id="section-counting-binomial-4-6-3-1-2-1">
+<div class="para" id="p-derived-section-counting-binomial-4-6-3-1-2-1">Answer:  This is <span class="process-math">\(\binom{n}{0}\text{,}\)</span> since that’s what binomial coefficients count.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#section-counting-binomial-4-6-3-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-6-3-1-2-2">
+<div class="para" id="p-derived-section-counting-binomial-4-6-3-1-2-2">Answer: There is exactly one way to do this. We just don’t get a cookie.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#section-counting-binomial-4-6-3-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">Because each answer answers the same question, we have shown that <span class="process-math">\(\binom{n}{0} = 1\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.3.4.1"><a tabindex="-1" href="#section-counting-binomial-4-6-3" title="Copy heading and permalink for Solution 5.3.4.1" aria-label="Copy heading and permalink for Solution 5.3.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 5.3.4"><a tabindex="-1" href="#section-counting-binomial-4-6" title="Copy heading and permalink for Example 5.3.4" aria-label="Copy heading and permalink for Example 5.3.4">🔗</a></div>
+</article>
+<article class="example example-like" id="example-symmetry-property"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="example-symmetry-property-1-1">Give a combinatorial proof of <span class="process-math">\(\displaystyle \binom{n}{k} = \binom{n}{n-k}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-symmetry-property-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-symmetry-property-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="example-symmetry-property-2-1">Sticking with the cookie scenario, how many ways to pick <span class="process-math">\(k\)</span> cookies from <span class="process-math">\(n\)</span> cookies?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-symmetry-property-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 5.3.5.1"><a tabindex="-1" href="#example-symmetry-property-2" title="Copy heading and permalink for Hint 5.3.5.1" aria-label="Copy heading and permalink for Hint 5.3.5.1">🔗</a></div>
+</div></details>
+<details id="example-symmetry-property-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="example-symmetry-property-3-1">
+<div class="para">Question: How many ways can we take <span class="process-math">\(k\)</span> cookies from a bag of <span class="process-math">\(n\)</span> cookies?</div>
+<ol class="decimal" id="example-symmetry-property-3-1-3">
+<li id="example-symmetry-property-3-1-3-1">
+<div class="para" id="p-derived-example-symmetry-property-3-1-3-1">Answer: There are <span class="process-math">\(\binom{n}{k}\)</span> ways to do this, since this is what binomial coefficients count.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#example-symmetry-property-3-1-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-symmetry-property-3-1-3-2">
+<div class="para" id="p-derived-example-symmetry-property-3-1-3-2">Answer: Instead of picking the cookies we want, let’s <em class="emphasis">pick the cookies we don’t want</em>.  We will pick the <span class="process-math">\(n-k\)</span> cookies that we don’t want, and there’s <span class="process-math">\(\binom{n}{n-k}\)</span> ways to do this.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#example-symmetry-property-3-1-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">Because these both answer the same question, we have that <span class="process-math">\(\binom{n}{k} = \binom{n}{n-k}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-symmetry-property-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.3.5.1"><a tabindex="-1" href="#example-symmetry-property-3" title="Copy heading and permalink for Solution 5.3.5.1" aria-label="Copy heading and permalink for Solution 5.3.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 5.3.5"><a tabindex="-1" href="#example-symmetry-property" title="Copy heading and permalink for Example 5.3.5" aria-label="Copy heading and permalink for Example 5.3.5">🔗</a></div>
+</article>
+<article class="example example-like" id="section-counting-binomial-4-8"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="section-counting-binomial-4-8-1-1">
+<div class="para">Prove the binomial identity</div>
+<div class="displaymath process-math" id="section-counting-binomial-4-8-1-1-1">
+\begin{equation*}
+\binom{n}{0}\binom{n}{0}+\binom{n}{1}\binom{n}{1}+\binom{n}{2}\binom{n}{2}+ \cdots + \binom{n}{n} \binom{n}{n} = \binom{2n}{n}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-4-8-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="section-counting-binomial-4-8-2-1">How many pizzas of <span class="process-math">\(n\)</span> toppings can be made if we can choose from <span class="process-math">\(2n\)</span> toppings?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 5.3.6.1"><a tabindex="-1" href="#section-counting-binomial-4-8-2" title="Copy heading and permalink for Hint 5.3.6.1" aria-label="Copy heading and permalink for Hint 5.3.6.1">🔗</a></div>
+</div></details>
+<details id="section-counting-binomial-4-8-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Video / Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="section-counting-binomial-4-8-3-1">Note that in the video, I start with a different form of the equation but quickly change it to this one. It’s equivalent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/4N5qJMBCXLg?&amp;modestbranding=1&amp;rel=0" id="section-counting-binomial-4-8-3-2"></iframe></div>
+<div class="autopermalink" aria-hidden="true" data-description="Video / Answer 5.3.6.1"><a tabindex="-1" href="#section-counting-binomial-4-8-3" title="Copy heading and permalink for Video / Answer 5.3.6.1" aria-label="Copy heading and permalink for Video / Answer 5.3.6.1">🔗</a></div>
+</div></details>
+<details id="section-counting-binomial-4-8-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="section-counting-binomial-4-8-4-1">
+<div class="para">For this one, I’m going to rewrite the equation, taking advantage of the symmetry property we proved in <a href="section-counting-binomial.html#example-symmetry-property" class="xref" data-knowl="./knowl/xref/example-symmetry-property.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.3.5">Example 5.3.5</a>. We start with:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-symmetry-property.html" id="section-counting-binomial-4-8-4-1-2">
+\begin{align*}
+\binom{n}{0}\binom{n}{0}+\binom{n}{1}\binom{n}{1}+\binom{n}{2}\binom{n}{2}+ \cdots + \binom{n}{n} \binom{n}{n} \amp= \binom{2n}{n}\\
+\binom{n}{0}\binom{n}{n-0}+\binom{n}{1}\binom{n}{n-1}+\binom{n}{2}\binom{n}{n-2}+ \cdots + \binom{n}{n} \binom{n}{n-n} \amp= \binom{2n}{n}
+\end{align*}
+</div>
+<div class="para">and this is what we’ll use to prove the identity.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-8-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-4-8-4-2">
+<div class="para">Question: If there are <span class="process-math">\(n\)</span> meats and <span class="process-math">\(n\)</span> non-meat toppings for a pizza, how many <span class="process-math">\(n\)</span> topping pizzas can be made? (if we don’t allow repeat toppings)</div>
+<ol class="decimal" id="section-counting-binomial-4-8-4-2-4">
+<li id="section-counting-binomial-4-8-4-2-4-1">
+<div class="para" id="p-derived-section-counting-binomial-4-8-4-2-4-1">Answer: There are <span class="process-math">\(\binom{2n}{n}\)</span> total pizzas that can be made.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-8-4-2-4-2">
+<div class="para logical" id="section-counting-binomial-4-8-4-2-4-2-1">
+<div class="para">Answer: We’ll split on how many meats we want:</div>
+<ul class="disc" id="section-counting-binomial-4-8-4-2-4-2-1-1">
+<li id="section-counting-binomial-4-8-4-2-4-2-1-1-1">
+<div class="para" id="section-counting-binomial-4-8-4-2-4-2-1-1-1-1">If we want no meats, then we’ll select no meats and <span class="process-math">\(n\)</span> non-meats. These are independent of one another, so we multiply: <span class="process-math">\(\binom{n}{0}\binom{n}{n}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-8-4-2-4-2-1-1-2">
+<div class="para" id="section-counting-binomial-4-8-4-2-4-2-1-1-2-1">If we want 1 meat, then we’ll select <span class="process-math">\(n-1\)</span> non-meats for the rest of the toppings. These are independent of one another, so we multiply: <span class="process-math">\(\binom{n}{1}\binom{n}{n-1}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-8-4-2-4-2-1-1-3">
+<div class="para" id="section-counting-binomial-4-8-4-2-4-2-1-1-3-1">If we want 2 meats, then we’ll select <span class="process-math">\(n-2\)</span> non-meats for the rest of the toppings. These are independent of one another, so we multiply: <span class="process-math">\(\binom{n}{2}\binom{n}{n-2}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-8-4-2-4-2-1-1-4">
+<div class="para" id="p-derived-section-counting-binomial-4-8-4-2-4-2-1-1-4">...</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-counting-binomial-4-8-4-2-4-2-1-1-5">
+<div class="para" id="section-counting-binomial-4-8-4-2-4-2-1-1-5-1">If we want n meats, then we’ll select <span class="process-math">\(n-n=0\)</span> non-meats for the rest of the toppings. These are independent of one another, so we multiply: <span class="process-math">\(\binom{n}{n}\binom{n}{0}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2-1-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">because each of these pizzas are completely different than the rest (have different numbers of meats), the addition principle says to add them all together:</div>
+<div class="displaymath process-math" id="section-counting-binomial-4-8-4-2-4-2-1-2">
+\begin{equation*}
+\binom{n}{0}\binom{n}{n}+\binom{n}{1}\binom{n}{n-1}+\binom{n}{2}\binom{n}{n-2}+ \cdots + \binom{n}{n} \binom{n}{0}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2-4-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">Because each answer was a different way to count the same objects, we find that</div>
+<div class="displaymath process-math" id="section-counting-binomial-4-8-4-2-5">
+\begin{equation*}
+\binom{n}{0}\binom{n}{n-0}+\binom{n}{1}\binom{n}{n-1}+\binom{n}{2}\binom{n}{n-2}+ \cdots + \binom{n}{n} \binom{n}{n-n} = \binom{2n}{n}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-4-8-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.3.6.1"><a tabindex="-1" href="#section-counting-binomial-4-8-4" title="Copy heading and permalink for Solution 5.3.6.1" aria-label="Copy heading and permalink for Solution 5.3.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 5.3.6"><a tabindex="-1" href="#section-counting-binomial-4-8" title="Copy heading and permalink for Example 5.3.6" aria-label="Copy heading and permalink for Example 5.3.6">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Combinatorial Proofs"><a tabindex="-1" href="#section-counting-binomial-4" title="Copy heading and permalink for Subsection: Combinatorial Proofs" aria-label="Copy heading and permalink for Subsection: Combinatorial Proofs">🔗</a></div>
+</section>
+<section class="exercises" id="section-counting-binomial-5">
+<h2 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h2>
+<article class="exercise exercise-like" id="section-counting-binomial-5-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="section-counting-binomial-5-1-1">
+<div class="para" id="section-counting-binomial-5-1-1-1">Prove <span class="process-math">\(\d\sum_{k=0}^n {n \choose k} = 2^n\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="section-counting-binomial-5-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="section-counting-binomial-5-1-2-1-1">Give a combinatorial proof.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-1-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="section-counting-binomial-5-1-2-2-1">Answer the question “If a pizza place offers <span class="process-math">\(n\)</span> toppings, how many pizzas can you build using any number of toppings using each topping no more than once?”<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 1.a.1"><a tabindex="-1" href="#section-counting-binomial-5-1-2-2" title="Copy heading and permalink for Hint 1.a.1" aria-label="Copy heading and permalink for Hint 1.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#section-counting-binomial-5-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="section-counting-binomial-5-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="section-counting-binomial-5-1-3-1-1">Use the binomial theorem and set appropriate values of <span class="process-math">\(x \and y\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#section-counting-binomial-5-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 1"><a tabindex="-1" href="#section-counting-binomial-5-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="section-counting-binomial-5-2"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="section-counting-binomial-5-2-1-1">Give a combinatorial proof of the identity <span class="process-math">\(2+2+2 = 3\cdot 2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<article class="proof" id="section-counting-binomial-5-2-2-1"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="section-counting-binomial-5-2-2-1-1">Question: How many 2-letter words start with <em class="emphasis">a</em>, <em class="emphasis">b</em>, or <em class="emphasis">c</em> and end with either <em class="emphasis">y</em> or <em class="emphasis">z</em>?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-2-2-1-2">Answer 1: There are two words that start with <em class="emphasis">a</em>, two that start with <em class="emphasis">b</em>, two that start with <em class="emphasis">c</em>, for a total of <span class="process-math">\(2+2+2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-2-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-2-2-1-3">Answer 2: There are three choices for the first letter and two choices for the second letter, for a total of <span class="process-math">\(3 \cdot 2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-2-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-2-2-1-4">Since the two answers are both answers to the same question, they are equal. Thus <span class="process-math">\(2 + 2 + 2 = 3\cdot 2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-2-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Proof 2.1.1"><a tabindex="-1" href="#section-counting-binomial-5-2-2-1" title="Copy heading and permalink for Proof 2.1.1" aria-label="Copy heading and permalink for Proof 2.1.1">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#section-counting-binomial-5-2-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#section-counting-binomial-5-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="section-counting-binomial-5-3"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="section-counting-binomial-5-3-1-1">Give a combinatorial proof for the identity <span class="process-math">\(1 + 2 + 3 + \cdots + n = {n+1 \choose 2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<article class="proof" id="section-counting-binomial-5-3-2-1"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="section-counting-binomial-5-3-2-1-1">Question: How many subsets of <span class="process-math">\(A = \{1,2,3, \ldots, n+1\}\)</span> contain exactly two elements?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-3-2-1-2">Answer 1: We must choose 2 elements from <span class="process-math">\(n+1\)</span> choices, so there are <span class="process-math">\({n+1 \choose 2}\)</span> subsets.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-3-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-3-2-1-3">Answer 2: We break this question down into cases, based on what the larger of the two elements in the subset is. The larger element can’t be 1, since we need at least one element smaller than it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-3-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-3-2-1-4">Larger element is 2: there is 1 choice for the smaller element.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-3-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-3-2-1-5">Larger element is 3: there are 2 choices for the smaller element.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-3-2-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-3-2-1-6">Larger element is 4: there are 3 choices for the smaller element.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-3-2-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-3-2-1-7">And so on. When the larger element is <span class="process-math">\(n+1\text{,}\)</span> there are <span class="process-math">\(n\)</span> choices for the smaller element. Since each two element subset must be in exactly one of these cases, the total number of two element subsets is <span class="process-math">\(1 + 2 + 3 + \cdots + n\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-3-2-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-5-3-2-1-8">
+<div class="para">Answer 1 and answer 2 are both correct answers to the same question, so they must be equal. Therefore,</div>
+<div class="displaymath process-math" id="section-counting-binomial-5-3-2-1-8-1">
+\begin{equation*}
+1 + 2 + 3 + \cdots + n = {n+1 \choose 2}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-3-2-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Proof 3.1.1"><a tabindex="-1" href="#section-counting-binomial-5-3-2-1" title="Copy heading and permalink for Proof 3.1.1" aria-label="Copy heading and permalink for Proof 3.1.1">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#section-counting-binomial-5-3-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3"><a tabindex="-1" href="#section-counting-binomial-5-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="section-counting-binomial-5-4"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="section-counting-binomial-5-4-1">
+<div class="para" id="section-counting-binomial-5-4-1-1">A woman is getting married. She has 15 best friends but can only select 6 of them to be her bridesmaids, one of which needs to be her maid of honor. How many ways can she do this?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="section-counting-binomial-5-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="section-counting-binomial-5-4-2-1-1">What if she first selects the 6 bridesmaids, and then selects one of them to be the maid of honor?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="section-counting-binomial-5-4-2-2-1">She has <span class="process-math">\({15 \choose 6}\)</span> ways to select the 6 bridesmaids, and then for each way, has 6 choices for the maid of honor. Thus she has <span class="process-math">\({15 \choose 6}6\)</span> choices.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.a.1"><a tabindex="-1" href="#section-counting-binomial-5-4-2-2" title="Copy heading and permalink for Solution 4.a.1" aria-label="Copy heading and permalink for Solution 4.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.a"><a tabindex="-1" href="#section-counting-binomial-5-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="section-counting-binomial-5-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="section-counting-binomial-5-4-3-1-1">What if she first selects her maid of honor, and then 5 other bridesmaids?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="section-counting-binomial-5-4-3-2-1">She has 15 choices for who will be her maid of honor. Then she needs to select 5 of the remaining 14 friends to be bridesmaids, which she can do in <span class="process-math">\({14 \choose 5}\)</span> ways. Thus she has <span class="process-math">\(15 {14 \choose 5}\)</span> choices.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.b.1"><a tabindex="-1" href="#section-counting-binomial-5-4-3-2" title="Copy heading and permalink for Solution 4.b.1" aria-label="Copy heading and permalink for Solution 4.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#section-counting-binomial-5-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="section-counting-binomial-5-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="section-counting-binomial-5-4-4-1-1">Explain why <span class="process-math">\(6 {15 \choose 6} = 15 {14 \choose 5}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="section-counting-binomial-5-4-4-2-1">We have answered the question, how many wedding parties can the bride choose from, in two ways. The first way gives the left-hand side of the identity and the second way gives the right-hand side of the identity. Therefore the identity holds.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.c.1"><a tabindex="-1" href="#section-counting-binomial-5-4-4-2" title="Copy heading and permalink for Solution 4.c.1" aria-label="Copy heading and permalink for Solution 4.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.c"><a tabindex="-1" href="#section-counting-binomial-5-4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 4"><a tabindex="-1" href="#section-counting-binomial-5-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="section-counting-binomial-5-5"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="section-counting-binomial-5-5-1-1">Give a combinatorial proof of the identity <span class="process-math">\({n \choose 2}{n-2 \choose k-2} = {n\choose k}{k \choose 2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<article class="proof" id="section-counting-binomial-5-5-2-1"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="section-counting-binomial-5-5-2-1-1">Question: You have a large container filled with ping-pong balls, all with a different number on them. You must select <span class="process-math">\(k\)</span> of the balls, putting two of them in a jar and the others in a box. How many ways can you do this?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-5-2-1-2">Answer 1: First select 2 of the <span class="process-math">\(n\)</span> balls to put in the jar. Then select <span class="process-math">\(k-2\)</span> of the remaining <span class="process-math">\(n-2\)</span> balls to put in the box. The first task can be completed in <span class="process-math">\({n \choose 2}\)</span> different ways, the second task in <span class="process-math">\({n-2 \choose k-2}\)</span> ways. Thus there are <span class="process-math">\({n \choose 2}{n-2 \choose k-2}\)</span> ways to select the balls.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-5-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-5-2-1-3">Answer 2: First select <span class="process-math">\(k\)</span> balls from the <span class="process-math">\(n\)</span> in the container. Then pick 2 of the <span class="process-math">\(k\)</span> balls you picked to put in the jar, placing the remaining <span class="process-math">\(k-2\)</span> in the box. The first task can be completed in <span class="process-math">\({n \choose k}\)</span> ways, the second task in <span class="process-math">\({k \choose 2}\)</span> ways. Thus there are <span class="process-math">\({n \choose k}{k \choose 2}\)</span> ways to select the balls.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-5-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-5-2-1-4">Since both answers count the same thing, they must be equal and the identity is established.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-5-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Proof 5.1.1"><a tabindex="-1" href="#section-counting-binomial-5-5-2-1" title="Copy heading and permalink for Proof 5.1.1" aria-label="Copy heading and permalink for Proof 5.1.1">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Solution 5.1"><a tabindex="-1" href="#section-counting-binomial-5-5-2" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 5"><a tabindex="-1" href="#section-counting-binomial-5-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="section-counting-binomial-5-6"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="section-counting-binomial-5-6-1-1">How many ways are there to rearrange the letters in the word “rearrange”? Answer this question in at least two different ways to establish a binomial identity.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="section-counting-binomial-5-6-2-1">
+<div class="para">The word contains 9 letters: 3 “r”s, 2 “a”s and 2 “e”s, along with an “n” and a “g”. We could first select the positions for the “r”s in <span class="process-math">\({9 \choose 3}\)</span> ways, then the “a”s in <span class="process-math">\({6 \choose 2}\)</span> ways, the “e”s in <span class="process-math">\({4 \choose 2}\)</span> ways and then select one of the remaining two spots to put the “n” (placing the “g” in the last spot). This gives the answer</div>
+<div class="displaymath process-math" id="section-counting-binomial-5-6-2-1-14">
+\begin{equation*}
+{9 \choose 3}{6 \choose 2}{4 \choose 2}{2\choose 1}{1\choose 1}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-5-6-2-2">
+<div class="para">Alternatively, we could select the positions of the letters in the opposite order, which would give an answer</div>
+<div class="displaymath process-math" id="section-counting-binomial-5-6-2-2-1">
+\begin{equation*}
+{9 \choose 1}{8\choose 1}{7 \choose 2}{5\choose 2}{3\choose 3}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-5-6-2-3">
+<div class="para">(where the 3 “r”s go in the remaining 3 spots). These two expressions are equal:</div>
+<div class="displaymath process-math" id="section-counting-binomial-5-6-2-3-2">
+\begin{equation*}
+{9 \choose 3}{6 \choose 2}{4 \choose 2}{2\choose 1}{1\choose 1} = {9 \choose 1}{8\choose 1}{7 \choose 2}{5\choose 2}{3\choose 3}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-6-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.1"><a tabindex="-1" href="#section-counting-binomial-5-6-2" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 6"><a tabindex="-1" href="#section-counting-binomial-5-6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="section-counting-binomial-5-7"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="section-counting-binomial-5-7-1-1">Give a combinatorial proof of the identity <span class="process-math">\(1 + 2 + 4 + 8 + \dots 2^{n-1} = 2^n - 1\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 7"><a tabindex="-1" href="#section-counting-binomial-5-7" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="section-counting-binomial-5-8"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="section-counting-binomial-5-8-1-1">Give a combinatorial proof for the identity <span class="process-math">\(P(n,k) = {n \choose k}k!\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<article class="proof" id="section-counting-binomial-5-8-2-1"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="section-counting-binomial-5-8-2-1-1">Question: How many <span class="process-math">\(k\)</span>-letter words can you make using <span class="process-math">\(n\)</span> different letters without repeating any letter?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-8-2-1-2">Answer 1: There are <span class="process-math">\(n\)</span> choices for the first letter, <span class="process-math">\(n-1\)</span> choices for the second letter, <span class="process-math">\(n-2\)</span> choices for the third letter, and so on until <span class="process-math">\(n - (k-1)\)</span> choices for the <span class="process-math">\(k\)</span>th letter (since <span class="process-math">\(k-1\)</span> letters have already been assigned at that point). The product of these numbers can be written <span class="process-math">\(\frac{n!}{(n-k)!}\)</span> which is <span class="process-math">\(P(n,k)\text{.}\)</span>  Therefore there are <span class="process-math">\(P(n,k)\)</span> words.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-8-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-8-2-1-3">Answer 2: First pick <span class="process-math">\(k\)</span> letters to be in the word from the <span class="process-math">\(n\)</span> choices. This can be done in <span class="process-math">\({n \choose k}\)</span> ways. Now arrange those letters into a word. There are <span class="process-math">\(k\)</span> choices for the first letter, <span class="process-math">\(k-1\)</span> choices for the second, and so on, for a total of <span class="process-math">\(k!\)</span> arrangements of the <span class="process-math">\(k\)</span> letters. Thus the total number of words is <span class="process-math">\({n \choose k}k!\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-8-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-8-2-1-4">Since the two answers are correct answers to the same question, we have established that <span class="process-math">\(P(n,k) = {n \choose k}k!\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-8-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Proof 8.1.1"><a tabindex="-1" href="#section-counting-binomial-5-8-2-1" title="Copy heading and permalink for Proof 8.1.1" aria-label="Copy heading and permalink for Proof 8.1.1">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Solution 8.1"><a tabindex="-1" href="#section-counting-binomial-5-8-2" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 8"><a tabindex="-1" href="#section-counting-binomial-5-8" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="section-counting-binomial-5-9"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="section-counting-binomial-5-9-1-1">
+<div class="para">Establish the identity below using a combinatorial proof.</div>
+<div class="displaymath process-math" id="section-counting-binomial-5-9-1-1-1">
+\begin{equation*}
+{2 \choose 2}{n \choose 2} + {3 \choose 2}{n-1 \choose 2} + {4\choose 2}{n-2 \choose 2} + \cdots + {n\choose 2}{2\choose 2} = {n+3 \choose 5}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<article class="proof" id="section-counting-binomial-5-9-2-1"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="section-counting-binomial-5-9-2-1-1">Question: How many 5-element subsets are there of the set <span class="process-math">\(\{1,2,\ldots, n+3\}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-9-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-counting-binomial-5-9-2-1-2">Answer 1: We choose 5 out of the <span class="process-math">\(n+3\)</span> elements, so <span class="process-math">\({n+3 \choose 5}\)</span> subsets.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-9-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-5-9-2-1-3">
+<div class="para">Answer 2: Break this up into cases by what the “middle” (third smallest) element of the 5 element subset is. The smallest this could be is a 3. In that case, we have <span class="process-math">\({2 \choose 2}\)</span> choices for the numbers below it, and <span class="process-math">\({n \choose 2}\)</span> choices for the numbers above it. Alternatively, the middle number could be a 4. In this case there are <span class="process-math">\({3 \choose 2}\)</span> choices for the bottom two numbers and <span class="process-math">\({n-1 \choose 2}\)</span> choices for the top two numbers. If the middle number is 5, then there are <span class="process-math">\({4 \choose 2}\)</span> choices for the bottom two numbers and <span class="process-math">\({n-2 \choose 2}\)</span> choices for the top two numbers. An so on, all the way up to the largest the middle number could be, which is <span class="process-math">\(n+1\text{.}\)</span> In that case there are <span class="process-math">\({n \choose 2}\)</span> choices for the bottom two numbers and <span class="process-math">\({2 \choose 2}\)</span> choices for the top number. Thus the number of 5 element subsets is</div>
+<div class="displaymath process-math" id="section-counting-binomial-5-9-2-1-3-11">
+\begin{equation*}
+{2 \choose 2}{n \choose 2} + {3 \choose 2}{n-1 \choose 2} + {4\choose 2}{n-2 \choose 2} + \cdots + {n\choose 2}{2\choose 2}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-9-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="section-counting-binomial-5-9-2-1-4">
+<div class="para">Since the two answers correctly answer the same question, we have</div>
+<div class="displaymath process-math" id="section-counting-binomial-5-9-2-1-4-1">
+\begin{equation*}
+{2 \choose 2}{n \choose 2} + {3 \choose 2}{n-1 \choose 2} + {4\choose 2}{n-2 \choose 2} + \cdots + {n\choose 2}{2\choose 2} = {n+3 \choose 5}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-9-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Proof 9.1.1"><a tabindex="-1" href="#section-counting-binomial-5-9-2-1" title="Copy heading and permalink for Proof 9.1.1" aria-label="Copy heading and permalink for Proof 9.1.1">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Solution 9.1"><a tabindex="-1" href="#section-counting-binomial-5-9-2" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 9"><a tabindex="-1" href="#section-counting-binomial-5-9" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="section-counting-binomial-5-10"><h3 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="section-counting-binomial-5-10-1">
+<div class="para" id="section-counting-binomial-5-10-1-1">In each polynomial below, assume <span class="process-math">\(x\)</span> is some variable. Use the binomial theorem to expand and reduce modulo the appropriate number:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="section-counting-binomial-5-10-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="section-counting-binomial-5-10-2-1-1">
+<span class="process-math">\((x+1)^2 \pmod 2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-10-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-10-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="section-counting-binomial-5-10-2-2-1">
+<span class="process-math">\((x+1)^2 = x^2 + 2x + 1 \equiv x^2 + 1 \pmod 2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-10-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.a.1"><a tabindex="-1" href="#section-counting-binomial-5-10-2-2" title="Copy heading and permalink for Solution 10.a.1" aria-label="Copy heading and permalink for Solution 10.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 10.a"><a tabindex="-1" href="#section-counting-binomial-5-10-2" title="Copy heading and permalink for Task 10.a" aria-label="Copy heading and permalink for Task 10.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="section-counting-binomial-5-10-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="section-counting-binomial-5-10-3-1-1">
+<span class="process-math">\((x+1)^5 \pmod 5\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-10-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-10-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="section-counting-binomial-5-10-3-2-1">
+<span class="process-math">\((x+1)^5 = x^5 + 5x^4 + 10x^3 + 10x^2 + 5x + 1 \equiv x^5 + 1 \pmod 5\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-10-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.b.1"><a tabindex="-1" href="#section-counting-binomial-5-10-3-2" title="Copy heading and permalink for Solution 10.b.1" aria-label="Copy heading and permalink for Solution 10.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 10.b"><a tabindex="-1" href="#section-counting-binomial-5-10-3" title="Copy heading and permalink for Task 10.b" aria-label="Copy heading and permalink for Task 10.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="section-counting-binomial-5-10-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="section-counting-binomial-5-10-4-1-1">
+<span class="process-math">\((x+1)^7 \pmod 7\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-10-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="section-counting-binomial-5-10-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="section-counting-binomial-5-10-4-2-1">What can be said about each binomial coefficient except the first and the last? Why?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-10-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.c.1"><a tabindex="-1" href="#section-counting-binomial-5-10-4-2" title="Copy heading and permalink for Solution 10.c.1" aria-label="Copy heading and permalink for Solution 10.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 10.c"><a tabindex="-1" href="#section-counting-binomial-5-10-4" title="Copy heading and permalink for Task 10.c" aria-label="Copy heading and permalink for Task 10.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="section-counting-binomial-5-10-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="section-counting-binomial-5-10-5-1-1">Prove that <span class="process-math">\((x+1)^p \equiv x^p + 1 \pmod p\)</span> for any prime <span class="process-math">\(p\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-counting-binomial-5-10-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 10.d"><a tabindex="-1" href="#section-counting-binomial-5-10-5" title="Copy heading and permalink for Task 10.d" aria-label="Copy heading and permalink for Task 10.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 10"><a tabindex="-1" href="#section-counting-binomial-5-10" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercises"><a tabindex="-1" href="#section-counting-binomial-5" title="Copy heading and permalink for Exercises" aria-label="Copy heading and permalink for Exercises">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 5.3: Combinatorial Proofs"><a tabindex="-1" href="#section-counting-binomial" title="Copy heading and permalink for Section 5.3: Combinatorial Proofs" aria-label="Copy heading and permalink for Section 5.3: Combinatorial Proofs">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="section-counting-combperm.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-counting-fib.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
