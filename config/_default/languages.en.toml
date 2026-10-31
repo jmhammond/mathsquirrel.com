@@ -18,9 +18,9 @@ title = "Notes and Musings"
 
 [params.author]
   name = "John Hammond"
-  # image = "/images/professor-squirrel.jpeg"
-  image = "/images/John-Hammond-Cover.jpg"
-  # image = "/images/john-hammond.jpg"
+  # image = "images/professor-squirrel.jpeg"
+  image = "images/John-Hammond-Cover.jpg"
+  # image = "images/john-hammond.jpg"
   headline = "Teaching Professor; Nerd"
   # bio = "Teaching Professor in the Department of Mathematics/Statistics at Wichita State University."
   links = [
